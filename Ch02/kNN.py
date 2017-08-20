@@ -116,3 +116,4 @@ def handwritingClassTest():
 
 
 group, labels = createDataSet();
+a = ""
