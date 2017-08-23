@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<site url="http://tj.gsxt.gov.cn/" name="ecip" description="全国企业信用查询-天津" province="TJ">
+  <request group="basic" name="gongshang" url="http://tj.gsxt.gov.cn{entId}" method="get" isArray="0" >
+  </request>
+  <request group="gtreport" name="base" url="http://tj.gsxt.gov.cn/corp-query-entprise-info-vAnnualReportPbBaseinfo-{ancheid}.html" method="post" isArray="0" >
+  </request>
+  <request group="gtreport" name="base2" url="http://tj.gsxt.gov.cn/corp-query-entprise-info-vAnnualPbReportBaseInfoForJs-{ancheid}.html" method="post" isArray="0" >
+  </request>
+  <request group="hzsreport" name="base" url="http://tj.gsxt.gov.cn/corp-query-entprise-info-annualReportSfcBaseinfo-{ancheid}.html" method="post" isArray="0" >
+  </request>
+  <request group="hzsreport" name="base2" url="http://tj.gsxt.gov.cn/corp-query-entprise-info-vAnnualSfcReportBaseInfoForJs-{ancheid}.html" method="post" isArray="0" >
+  </request>
+  <request group="report" name="base" url="http://tj.gsxt.gov.cn/corp-query-entprise-info-annualReportBaseinfo-{ancheid}.html" method="post" isArray="0" >
+  </request>
+  <request group="report" name="captial" url="http://tj.gsxt.gov.cn/corp-query-entprise-info-sponsor-{ancheid}.html" method="post" isArray="0" >
+  </request>
+  <request group="reportcaptial" name="list" url="http://tj.gsxt.gov.cn/corp-query-entprise-info-sponsor-{ancheid}.html" method="post" isArray="0" >
+    <parameter name="draw" value="{pageno}" type="System.String"></parameter>
+    <parameter name="start" value="{start}" type="System.String"></parameter>
+  </request>
+  <request group="report" name="stockchange" url="http://tj.gsxt.gov.cn/corp-query-entprise-info-vAnnualReportAlterstockinfo-{ancheid}.html" method="post" isArray="0" >
+  </request>
+  <request group="reportstockchange" name="list" url="http://tj.gsxt.gov.cn/corp-query-entprise-info-vAnnualReportAlterstockinfo-{ancheid}.html" method="post" isArray="0" >
+    <parameter name="draw" value="{pageno}" type="System.String"></parameter>
+    <parameter name="start" value="{start}" type="System.String"></parameter>
+  </request>
+  <request group="report" name="alter" url="http://tj.gsxt.gov.cn/corp-query-entprise-info-annualAlter-{ancheid}.html" method="post" isArray="0" >
+  </request>
+  <request group="reportalter" name="list" url="http://tj.gsxt.gov.cn/corp-query-entprise-info-annualAlter-{ancheid}.html" method="post" isArray="0" >
+    <parameter name="draw" value="{pageno}" type="System.String"></parameter>
+    <parameter name="start" value="{start}" type="System.String"></parameter>
+  </request>
+  <request group="report" name="website" url="http://tj.gsxt.gov.cn/corp-query-entprise-info-webSiteInfo-{ancheid}.html" method="post" isArray="0" >
+  </request>
+  <request group="report" name="externalinvest" url="http://tj.gsxt.gov.cn/corp-query-entprise-info-forInvestment-{ancheid}.html" method="post" isArray="0" >
+  </request>
+  <request group="report" name="dwdb" url="http://tj.gsxt.gov.cn/corp-query-entprise-info-forGuaranteeinfo-{ancheid}.html" method="post" isArray="0" >
+  </request>
+  <request group="reportdwdb" name="list" url="http://tj.gsxt.gov.cn/corp-query-entprise-info-forGuaranteeinfo-{ancheid}.html" method="post" isArray="0" >
+    <parameter name="draw" value="{pageno}" type="System.String"></parameter>
+    <parameter name="start" value="{start}" type="System.String"></parameter>
+  </request>
+</site>
+

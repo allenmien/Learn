@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<site url="http://nm.gsxt.gov.cn" name="ecip" description="全国企业信用查询-内蒙古" province="NMG">
+  <request group="gongshang" name="gongshang" url="http://nm.gsxt.gov.cn/GSpublicity/GSpublicityList.html" method="get" isArray="0" description="基本信息">
+    <parameter name="service" value="{entInfo}" type="System.String"></parameter>
+  </request>
+  <request group="basic" name="partner" url="http://nm.gsxt.gov.cn//invInfo/invInfoList" method="get" isArray="0" description="股东信息">
+    <parameter name="pageNo" value="1" type="System.String"></parameter>
+    <parameter name="entNo" value="{entNo}" type="System.String"></parameter>
+    <parameter name="regOrg" value="{regOrg}" type="System.String"></parameter>
+  </request>
+  <request group="partner" name="partner_detail" url="http://nm.gsxt.gov.cn/GSpublicity/invInfoDetails.html" method="get" isArray="0" description="股东详情信息">
+    <parameter name="invNo" value="{invNo}" type="System.String"></parameter>
+    <parameter name="entNo" value="{entNo}" type="System.String"></parameter>
+    <parameter name="regOrg" value="{regOrg}" type="System.String"></parameter>
+  </request>
+  <request group="basic" name="changerecord" url="http://nm.gsxt.gov.cn//EntChaInfo/EntChatInfoList" method="get" isArray="0" description="变更信息">
+    <parameter name="pageNo" value="1" type="System.String"></parameter>
+    <parameter name="entNo" value="{entNo}" type="System.String"></parameter>
+    <parameter name="regOrg" value="{regOrg}" type="System.String"></parameter>
+  </request>
+  <request group="basic" name="mortgage" url="http://nm.gsxt.gov.cn/PleInfo/PleInfoList" method="get" isArray="0" description="动产抵押信息">
+    <parameter name="pageNo" value="1" type="System.String"></parameter>
+    <parameter name="entNo" value="{entNo}" type="System.String"></parameter>
+    <parameter name="regOrg" value="{regOrg}" type="System.String"></parameter>
+  </request>
+  <request group="basic" name="equity_quality" url="http://nm.gsxt.gov.cn//StoPleInfo/StoPleInfoList" method="get" isArray="0" description="股权出质信息">
+    <parameter name="pageNo" value="1" type="System.String"></parameter>
+    <parameter name="entNo" value="{entNo}" type="System.String"></parameter>
+    <parameter name="regOrg" value="{regOrg}" type="System.String"></parameter>
+  </request>
+  <request group="basic" name="checkup" url="http://nm.gsxt.gov.cn//cipSpotCheInfo/cipSpotCheInfoList" method="get" isArray="0" description="抽查检查信息">
+    <parameter name="pageNo" value="1" type="System.String"></parameter>
+    <parameter name="entNo" value="{entNo}" type="System.String"></parameter>
+    <parameter name="regOrg" value="{regOrg}" type="System.String"></parameter>
+  </request>
+  <request group="basic" name="judicial_freeze" url="http://nm.gsxt.gov.cn//OtherPublicity/highCourttList" method="get" isArray="0" description="股权冻结信息">
+    <parameter name="pageNo" value="1" type="System.String"></parameter>
+    <parameter name="entNo" value="{entNo}" type="System.String"></parameter>
+    <parameter name="regOrg" value="{regOrg}" type="System.String"></parameter>
+  </request>
+  <request group="basic" name="financial_contribution" url="http://nm.gsxt.gov.cn//REIInvInfo/REIInvInfoList" method="get" isArray="0" description="股东及出资信息">
+    <parameter name="pageNo" value="1" type="System.String"></parameter>
+    <parameter name="entNo" value="{entNo}" type="System.String"></parameter>
+    <parameter name="regOrg" value="{regOrg}" type="System.String"></parameter>
+  </request>
+  <request group="basic" name="stockchange" url="http://nm.gsxt.gov.cn//GuQuan/GuQuanChangeList" method="get" isArray="0" description="股权变更信息">
+    <parameter name="pageNo" value="1" type="System.String"></parameter>
+    <parameter name="entNo" value="{entNo}" type="System.String"></parameter>
+    <parameter name="regOrg" value="{regOrg}" type="System.String"></parameter>
+  </request>
+  <request group="basic" name="knowledge_property" url="http://nm.gsxt.gov.cn//intPropertyList" method="get" isArray="0" description="知识产权出质信息">
+    <parameter name="pageNo" value="1" type="System.String"></parameter>
+    <parameter name="entNo" value="{entNo}" type="System.String"></parameter>
+    <parameter name="regOrg" value="{regOrg}" type="System.String"></parameter>
+  </request>
+  <request group="basic" name="licence" url="http://nm.gsxt.gov.cn//appInfoList" method="get" isArray="0" description="行政许可信息">
+    <parameter name="pageNo" value="1" type="System.String"></parameter>
+    <parameter name="entNo" value="{entNo}" type="System.String"></parameter>
+    <parameter name="regOrg" value="{regOrg}" type="System.String"></parameter>
+  </request>
+  <request group="basic" name="licence_gs" url="http://nm.gsxt.gov.cn/OtherPublicity/environmentalProtection.html?requestType=appPer" method="post" isArray="0" description="行政许可信息-工商">
+    <parameter name="pageNo" value="1" type="System.String"></parameter>
+    <parameter name="entNo" value="{entNo}" type="System.String"></parameter>
+    <parameter name="entType" value="{entType}" type="System.String"></parameter>
+    <parameter name="regOrg" value="{regOrg}" type="System.String"></parameter>
+  </request>
+  <request group="basic" name="administrative_punishment" url="http://nm.gsxt.gov.cn/xzPunishmentList" method="get" isArray="0" description="行政处罚信息">
+    <parameter name="pageNo" value="1" type="System.String"></parameter>
+    <parameter name="entNo" value="{entNo}" type="System.String"></parameter>
+    <parameter name="regOrg" value="{regOrg}" type="System.String"></parameter>
+  </request>
+  <request group="basic" name="administrative_punishment_tw" url="http://nm.gsxt.gov.cn/OtherPublicity/otherDeptInfo.html?requestType=tw" method="post" isArray="0" description="行政处罚信息">
+    <parameter name="entNo" value="{entNo}" type="System.String"></parameter>
+    <parameter name="entType" value="{entType}" type="System.String"></parameter>
+    <parameter name="regOrg" value="{regOrg}" type="System.String"></parameter>
+  </request>
+  <request group="basic" name="abnormal" url="http://nm.gsxt.gov.cn/GSpublicity/GSpublicityList.html?service=cipUnuDirInfo" method="post" isArray="0" description="经营异常信息">
+    <parameter name="entNo" value="{entNo}" type="System.String"></parameter>
+    <parameter name="entType" value="{entType}" type="System.String"></parameter>
+    <parameter name="regOrg" value="{regOrg}" type="System.String"></parameter>
+  </request>
+  <request group="report" name="report_detail" url="http://nm.gsxt.gov.cn//BusinessAnnals/annualReport.html" method="get" isArray="0" description="股东及出资信息-年报">
+    <parameter name="entityType" value="{entityType}" type="System.String"></parameter>
+    <parameter name="entNo" value="{entNo}" type="System.String"></parameter>
+    <parameter name="regOrg" value="{regOrg}" type="System.String"></parameter>
+    <parameter name="reportYear" value="{reportYear}" type="System.String"></parameter>
+  </request>
+  <request group="report" name="report_partner" url="http://nm.gsxt.gov.cn//capital/capitalList" method="get" isArray="0" description="股东及出资信息-年报">
+    <parameter name="pageNo" value="{pageNo}" type="System.String"></parameter>
+    <parameter name="entNo" value="{entNo}" type="System.String"></parameter>
+    <parameter name="regOrg" value="{regOrg}" type="System.String"></parameter>
+    <parameter name="reportYear" value="{reportYear}" type="System.String"></parameter>
+  </request>
+  <request group="report" name="report_stockchange" url="http://nm.gsxt.gov.cn//StockTransfer/StockTransferList" method="get" isArray="0" description="股权变更信息-年报">
+    <parameter name="pageNo" value="{pageNo}" type="System.String"></parameter>
+    <parameter name="entNo" value="{entNo}" type="System.String"></parameter>
+    <parameter name="regOrg" value="{regOrg}" type="System.String"></parameter>
+    <parameter name="reportYear" value="{reportYear}" type="System.String"></parameter>
+  </request>
+  <request group="report" name="report_external_guarantee" url="http://nm.gsxt.gov.cn//Guaranty/GuarantyList" method="get" isArray="0" description="对外提供担保信息-年报">
+    <parameter name="pageNo" value="{pageNo}" type="System.String"></parameter>
+    <parameter name="entNo" value="{entNo}" type="System.String"></parameter>
+    <parameter name="regOrg" value="{regOrg}" type="System.String"></parameter>
+    <parameter name="reportYear" value="{reportYear}" type="System.String"></parameter>
+  </request>
+</site>

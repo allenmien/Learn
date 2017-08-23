@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<site url="http://gsxt.gzgs.gov.cn/index.html" name="ecip" description="全国企业信用查询-贵州" province="GZ">
+  
+  <!--基本信息状态抓取-->
+  <request group="basic" name="basicInfostatus" url="http://gsxt.gzgs.gov.cn/2016/query!searchData.shtml" method="post" isArray="0" >
+    <parameter name="c" value="0" type="System.String"></parameter>
+    <parameter name="t" value="57" type="System.String"></parameter>
+    <parameter name="nbxh" value="{nbxh}" type="System.String"></parameter>
+  </request>
+  <!--基本信息-->
+  <request group="basic" name="basicInfo" url="http://gsxt.gzgs.gov.cn/2016/query!searchData.shtml" method="post" isArray="0" >
+    <parameter name="c" value="1" type="System.String"></parameter>
+    <parameter name="t" value="1" type="System.String"></parameter>
+    <parameter name="nbxh" value="{nbxh}" type="System.String"></parameter>
+  </request>
+  <!--变更-->
+  <request group="basic" name="alter" url="http://gsxt.gzgs.gov.cn/2016/query!searchData.shtml" method="post" isArray="0" >
+    <parameter name="c" value="1" type="System.String"></parameter>
+    <parameter name="t" value="2" type="System.String"></parameter>
+    <parameter name="nbxh" value="{nbxh}" type="System.String"></parameter>
+  </request>
+  <!--参加经营的家庭成员姓名-->
+  <request group="basic" name="employee" url="http://gsxt.gzgs.gov.cn/2016/query!searchData.shtml" method="post" isArray="0" >
+    <parameter name="c" value="1" type="System.String"></parameter>
+    <parameter name="t" value="3" type="System.String"></parameter>
+    <parameter name="nbxh" value="{nbxh}" type="System.String"></parameter>
+  </request>
+  <!--动产抵押-->
+  <request group="basic" name="dongchandiya" url="http://gsxt.gzgs.gov.cn/2016/query!searchData.shtml" method="post" isArray="0" >
+    <parameter name="c" value="0" type="System.String"></parameter>
+    <parameter name="t" value="25" type="System.String"></parameter>
+    <parameter name="nbxh" value="{nbxh}" type="System.String"></parameter>
+  </request>
+  <!--抵押权人概况-->
+  <request group="dongchandiyaDetail" name="dongchandiyaDetail_diyaquanren" url="http://gsxt.gzgs.gov.cn/global/search!searchDcdy.shtml" method="post" isArray="0" >
+    <parameter name="c" value="0" type="System.String"></parameter>
+    <parameter name="t" value="27" type="System.String"></parameter>
+    <parameter name="dcnbxh" value="{dcnbxh}" type="System.String"></parameter>
+    <parameter name="djbh" value="{djbh}" type="System.String"></parameter>
+  </request>
+  <!--被担保债权概况-->
+  <request group="dongchandiyaDetail" name="dongchandiyaDetail_beidanbaozhaiquan" url="http://gsxt.gzgs.gov.cn/global/search!searchDcdy.shtml" method="post" isArray="0" >
+    <parameter name="c" value="0" type="System.String"></parameter>
+    <parameter name="t" value="28" type="System.String"></parameter>
+    <parameter name="dcnbxh" value="{dcnbxh}" type="System.String"></parameter>
+    <parameter name="djbh" value="{djbh}" type="System.String"></parameter>
+  </request>
+  <!--抵押物概况-->
+  <request group="dongchandiyaDetail" name="dongchandiyaDetail_diyawu" url="http://gsxt.gzgs.gov.cn/global/search!searchDcdy.shtml" method="post" isArray="0" >
+    <parameter name="c" value="0" type="System.String"></parameter>
+    <parameter name="t" value="29" type="System.String"></parameter>
+    <parameter name="dcnbxh" value="{dcnbxh}" type="System.String"></parameter>
+    <parameter name="djbh" value="{djbh}" type="System.String"></parameter>
+  </request>
+  <!--经营异常-->
+  <request group="basic" name="jingyin" url="http://gsxt.gzgs.gov.cn/2016/query!searchData.shtml" method="post" isArray="0" >
+    <parameter name="c" value="0" type="System.String"></parameter>
+    <parameter name="t" value="33" type="System.String"></parameter>
+    <parameter name="nbxh" value="{nbxh}" type="System.String"></parameter>
+  </request>
+  <!--抽查检查-->
+  <request group="basic" name="check" url="http://gsxt.gzgs.gov.cn/2016/query!searchData.shtml" method="post" isArray="0" >
+    <parameter name="c" value="0" type="System.String"></parameter>
+    <parameter name="t" value="35" type="System.String"></parameter>
+    <parameter name="nbxh" value="{nbxh}" type="System.String"></parameter>
+  </request>
+  <!--年报-->
+  <request group="basic" name="report" url="http://gsxt.gzgs.gov.cn/2016/query!searchData.shtml" method="post" isArray="0" >
+    <parameter name="c" value="1" type="System.String"></parameter>
+    <parameter name="t" value="8" type="System.String"></parameter>
+    <parameter name="nbxh" value="{nbxh}" type="System.String"></parameter>
+  </request>
+  <!--年报详细：基本信息-->
+  <request group="report" name="reportBasic" url="http://gsxt.gzgs.gov.cn/2016/query!searchNbxx.shtml" method="post" isArray="0" >
+    <parameter name="c" value="1" type="System.String"></parameter>
+    <parameter name="t" value="4" type="System.String"></parameter>
+    <parameter name="nbxh" value="{nbxh}" type="System.String"></parameter>
+    <parameter name="lsh" value="{lsh}" type="System.String"></parameter>
+  </request>
+
+  <!--年报详细：网站-->
+  <request group="report" name="reportWebsite" url="http://gsxt.gzgs.gov.cn/2016/query!searchNbxx.shtml" method="post" isArray="0" >
+    <parameter name="c" value="1" type="System.String"></parameter>
+    <parameter name="t" value="7" type="System.String"></parameter>
+    <parameter name="nbxh" value="{nbxh}" type="System.String"></parameter>
+    <parameter name="lsh" value="{lsh}" type="System.String"></parameter>
+  </request>
+  <!--年报详细：资产状况-->
+  <request group="report" name="reportZichan" url="http://gsxt.gzgs.gov.cn/2016/query!searchNbxx.shtml" method="post" isArray="0" >
+    <parameter name="c" value="1" type="System.String"></parameter>
+    <parameter name="t" value="6" type="System.String"></parameter>
+    <parameter name="nbxh" value="{nbxh}" type="System.String"></parameter>
+    <parameter name="lsh" value="{lsh}" type="System.String"></parameter>
+  </request>
+</site>
+

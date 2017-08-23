@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<site url="http://cri.gz.gov.cn/" name="guangzhou" description="全国企业信用查询-广州" province="GD">
+  <!--基本信息-->
+  <request group="gongshang" name="Detail" url="http://cri.gz.gov.cn/Detail" method="get" isArray="0" >
+    <parameter name="zch" value="{zch}" type="System.String"></parameter>
+    <parameter name="state" value="{state}" type="System.String"></parameter>
+  </request>
+  <!--股东信息-->
+  <request group="gongshang" name="Shareholder" url="http://cri.gz.gov.cn/Detail/Shareholder" method="get" isArray="0" >
+    <parameter name="zch" value="{zch}" type="System.String"></parameter>
+  </request>
+  <!--主要人员-->
+  <request group="gongshang" name="Staff" url="http://cri.gz.gov.cn/Detail/Staff" method="get" isArray="0" >
+    <parameter name="zch" value="{zch}" type="System.String"></parameter>
+  </request>
+  <!--股权出质-->
+  <request group="gongshang" name="EquityPledge" url="http://cri.gz.gov.cn/Detail/EquityPledge" method="get" isArray="0" >
+    <parameter name="zch" value="{zch}" type="System.String"></parameter>
+  </request>
+  <!--动产抵押-->
+  <request group="gongshang" name="ChattelMortgage" url="http://cri.gz.gov.cn/Detail/ChattelMortgage" method="get" isArray="0" >
+    <parameter name="zch" value="{zch}" type="System.String"></parameter>
+  </request>
+  <!--行政许可-->
+  <request group="gongshang" name="Approval" url="http://cri.gz.gov.cn/Detail/Approval" method="get" isArray="0" >
+    <parameter name="zch" value="{zch}" type="System.String"></parameter>
+  </request>
+  <!--行政处罚-->
+  <request group="gongshang" name="Punishment" url="http://cri.gz.gov.cn/Detail/Punishment" method="get" isArray="0" >
+    <parameter name="zch" value="{zch}" type="System.String"></parameter>
+  </request>
+  <!--年报-->
+  <request group="gongshang" name="AnnualReport" url="http://cri.gz.gov.cn/Detail/AnnualReport" method="get" isArray="0" >
+    <parameter name="zch" value="{zch}" type="System.String"></parameter>
+  </request>
+  <!--行政许可-->
+  <request group="gongshang" name="SelfApproval" url="http://cri.gz.gov.cn/Detail/SelfApproval" method="get" isArray="0" >
+    <parameter name="zch" value="{zch}" type="System.String"></parameter>
+  </request>
+  <!--出资信息-->
+  <request group="gongshang" name="Investment" url="http://cri.gz.gov.cn/Detail/Investment" method="get" isArray="0" >
+    <parameter name="zch" value="{zch}" type="System.String"></parameter>
+  </request>
+</site>
+

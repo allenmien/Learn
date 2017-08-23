@@ -1,0 +1,420 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<site url="http://www.jsgsj.gov.cn:58888/ecipplatform/" name="ecip" description="全国企业信用查询-江苏" province="JS">、
+  <request group="gongshang" name="gongshang" isArray="1" url=" http://www.jsgsj.gov.cn:58888/ecipplatform/publicInfoQueryServlet.json" method="get" description="基本信息">
+    <parameter name="pageView" value="true" type="System.String"></parameter>
+    <parameter name="org" value="{org}" type="System.String"></parameter>
+    <parameter name="id" value="{id}" type="System.String"></parameter>
+    <parameter name="seqId" value="{seqId}" type="System.String"></parameter>
+    <parameter name="abnormal" value="{abnormal}" type="System.String"></parameter>
+    <parameter name="activeTabId" value="" type="System.String"></parameter>
+    <parameter name="tmp" value="94" type="System.String"></parameter>
+  </request>
+  <request group="basic" name="partner" isArray="1" url="http://www.jsgsj.gov.cn:58888/ecipplatform/publicInfoQueryServlet.json?queryGdcz=true" method="post" description="股东信息">
+    <parameter name="org" value="{org}" type="System.String"></parameter>
+    <parameter name="id" value="{id}" type="System.String"></parameter>
+    <parameter name="seqId" value="{seqId}" type="System.String"></parameter>
+    <parameter name="abnormal" value="" type="System.String"></parameter>
+    <parameter name="activeTabId" value="" type="System.String"></parameter>
+    <parameter name="tmp" value="78" type="System.String"></parameter>
+    <parameter name="regNo" value="{regNo}" type="System.String"></parameter>
+    <parameter name="admitMain" value="{admitMain}" type="System.String"></parameter>
+    <parameter name="pageSize" value="1000" type="System.String"></parameter>
+    <parameter name="curPage" value="1" type="System.String"></parameter>
+    <parameter name="sortName" value="" type="System.String"></parameter>
+    <parameter name="sortOrder" value="" type="System.String"></parameter>
+  </request>
+  <request group="partner" name="partner_detail" isArray="1" url="http://www.jsgsj.gov.cn:58888/ecipplatform/publicInfoQueryServlet.json" method="get" description="股东信息详情">
+    <parameter name="queryGdczGdxx" value="true" type="System.String"></parameter>
+    <parameter name="org" value="{org}" type="System.String"></parameter>
+    <parameter name="id" value="{id}" type="System.String"></parameter>
+    <parameter name="seqId" value="{seqId}" type="System.String"></parameter>
+    <parameter name="admitMain" value="{admitMain}" type="System.String"></parameter>
+    <parameter name="capiTypeName" value="{capiTypeName}" type="System.String"></parameter>
+    <parameter name="tmp" value="{tmp}" type="System.String"></parameter>
+  </request>
+  <request group="partner" name="partner_detail_rj" isArray="1" url="http://www.jsgsj.gov.cn:58888/ecipplatform/publicInfoQueryServlet.json?queryGdczGdxx=true" method="post" description="股东信息详情-认缴">
+    <parameter name="id" value="{id}" type="System.String"></parameter>
+    <parameter name="org" value="{org}" type="System.String"></parameter>
+    <parameter name="capiTypeName" value="{capiTypeName}" type="System.String"></parameter>
+    <parameter name="admitMain" value="{admitMain}" type="System.String"></parameter>
+    <parameter name="type" value="rj" type="System.String"></parameter>
+    <parameter name="pageSize" value="1000" type="System.String"></parameter>
+    <parameter name="curPage" value="1" type="System.String"></parameter>
+    <parameter name="sortName" value="" type="System.String"></parameter>
+    <parameter name="sortOrder" value="" type="System.String"></parameter>
+  </request>
+  <request group="partner" name="partner_detail_sj" isArray="1" url="http://www.jsgsj.gov.cn:58888/ecipplatform/publicInfoQueryServlet.json?queryGdczGdxx=true" method="post" description="股东信息详情-实缴">
+    <parameter name="id" value="{id}" type="System.String"></parameter>
+    <parameter name="org" value="{org}" type="System.String"></parameter>
+    <parameter name="capiTypeName" value="{capiTypeName}" type="System.String"></parameter>
+    <parameter name="admitMain" value="{admitMain}" type="System.String"></parameter>
+    <parameter name="type" value="sj" type="System.String"></parameter>
+    <parameter name="pageSize" value="1000" type="System.String"></parameter>
+    <parameter name="curPage" value="1" type="System.String"></parameter>
+    <parameter name="sortName" value="" type="System.String"></parameter>
+    <parameter name="sortOrder" value="" type="System.String"></parameter>
+  </request>
+  <request group="basic" name="employee" isArray="1" url="http://www.jsgsj.gov.cn:58888/ecipplatform/publicInfoQueryServlet.json" method="get" description="主要成员信息">
+    <parameter name="queryZyry" value="true" type="System.String"></parameter>
+    <parameter name="org" value="{org}" type="System.String"></parameter>
+    <parameter name="id" value="{id}" type="System.String"></parameter>
+    <parameter name="seqId" value="{seqId}" type="System.String"></parameter>
+    <parameter name="abnormal" value="" type="System.String"></parameter>
+    <parameter name="activeTabId" value="" type="System.String"></parameter>
+    <parameter name="tmp" value="78" type="System.String"></parameter>
+    <parameter name="regNo" value="{regNo}" type="System.String"></parameter>
+    <parameter name="admitMain" value="{admitMain}" type="System.String"></parameter>
+  </request>
+  <request group="basic" name="branches" isArray="1" url="http://www.jsgsj.gov.cn:58888/ecipplatform/publicInfoQueryServlet.json" method="get" description="分支机构信息">
+    <parameter name="queryFzjg" value="true" type="System.String"></parameter>
+    <parameter name="org" value="{org}" type="System.String"></parameter>
+    <parameter name="id" value="{id}" type="System.String"></parameter>
+    <parameter name="seqId" value="{seqId}" type="System.String"></parameter>
+    <parameter name="abnormal" value="" type="System.String"></parameter>
+    <parameter name="activeTabId" value="" type="System.String"></parameter>
+    <parameter name="tmp" value="78" type="System.String"></parameter>
+    <parameter name="regNo" value="{regNo}" type="System.String"></parameter>
+    <parameter name="admitMain" value="{admitMain}" type="System.String"></parameter>
+  </request>
+  <request group="basic" name="changerecords" isArray="1" url="http://www.jsgsj.gov.cn:58888/ecipplatform/publicInfoQueryServlet.json?queryBgxx=true" method="post" description="变更信息">
+    <parameter name="org" value="{org}" type="System.String"></parameter>
+    <parameter name="id" value="{id}" type="System.String"></parameter>
+    <parameter name="seqId" value="{seqId}" type="System.String"></parameter>
+    <parameter name="abnormal" value="" type="System.String"></parameter>
+    <parameter name="activeTabId" value="" type="System.String"></parameter>
+    <parameter name="tmp" value="78" type="System.String"></parameter>
+    <parameter name="regNo" value="{regNo}" type="System.String"></parameter>
+    <parameter name="admitMain" value="{admitMain}" type="System.String"></parameter>
+    <parameter name="pageSize" value="1000" type="System.String"></parameter>
+    <parameter name="curPage" value="1" type="System.String"></parameter>
+    <parameter name="sortName" value="" type="System.String"></parameter>
+    <parameter name="sortOrder" value="" type="System.String"></parameter>
+  </request>
+  <request group="basic" name="licences" isArray="1" url="http://www.jsgsj.gov.cn:58888/ecipplatform/publicInfoQueryServlet.json?queryXzxk=true" method="post" description="行政许可信息">
+    <parameter name="org" value="{org}" type="System.String"></parameter>
+    <parameter name="id" value="{id}" type="System.String"></parameter>
+    <parameter name="seqId" value="{seqId}" type="System.String"></parameter>
+    <parameter name="abnormal" value="" type="System.String"></parameter>
+    <parameter name="activeTabId" value="" type="System.String"></parameter>
+    <parameter name="tmp" value="78" type="System.String"></parameter>
+    <parameter name="regNo" value="{regNo}" type="System.String"></parameter>
+    <parameter name="admitMain" value="{admitMain}" type="System.String"></parameter>
+    <parameter name="pageSize" value="1000" type="System.String"></parameter>
+    <parameter name="curPage" value="1" type="System.String"></parameter>
+    <parameter name="sortName" value="" type="System.String"></parameter>
+    <parameter name="sortOrder" value="" type="System.String"></parameter>
+  </request>
+  <request group="basic" name="abnormals" isArray="1" url="http://www.jsgsj.gov.cn:58888/ecipplatform/publicInfoQueryServlet.json?queryJyyc=true" method="post" description="经营异常信息">
+    <parameter name="org" value="{org}" type="System.String"></parameter>
+    <parameter name="id" value="{id}" type="System.String"></parameter>
+    <parameter name="seqId" value="{seqId}" type="System.String"></parameter>
+    <parameter name="abnormal" value="" type="System.String"></parameter>
+    <parameter name="activeTabId" value="" type="System.String"></parameter>
+    <parameter name="tmp" value="78" type="System.String"></parameter>
+    <parameter name="regNo" value="{regNo}" type="System.String"></parameter>
+    <parameter name="admitMain" value="{admitMain}" type="System.String"></parameter>
+    <parameter name="pageSize" value="1000" type="System.String"></parameter>
+    <parameter name="curPage" value="1" type="System.String"></parameter>
+    <parameter name="sortName" value="" type="System.String"></parameter>
+    <parameter name="sortOrder" value="" type="System.String"></parameter>
+  </request>
+  <request group="basic" name="serious_illegal_execution" isArray="1" url="http://www.jsgsj.gov.cn:58888/ecipplatform/publicInfoQueryServlet.json?queryYzwf=true" method="post" description="严重违法信息-严重违法失信企业名单（黑名单）信息">
+    <parameter name="org" value="{org}" type="System.String"></parameter>
+    <parameter name="id" value="{id}" type="System.String"></parameter>
+    <parameter name="seqId" value="{seqId}" type="System.String"></parameter>
+    <parameter name="abnormal" value="" type="System.String"></parameter>
+    <parameter name="activeTabId" value="" type="System.String"></parameter>
+    <parameter name="tmp" value="49" type="System.String"></parameter>
+    <parameter name="regNo" value="{regNo}" type="System.String"></parameter>
+    <parameter name="admitMain" value="{admitMain}" type="System.String"></parameter>
+    <parameter name="uniScid" value="{uniScid}" type="System.String"></parameter>
+    <parameter name="econKind" value="{econKind}" type="System.String"></parameter>
+    <parameter name="pageSize" value="1000" type="System.String"></parameter>
+    <parameter name="curPage" value="1" type="System.String"></parameter>
+    <parameter name="sortName" value="" type="System.String"></parameter>
+    <parameter name="sortOrder" value="" type="System.String"></parameter>
+  </request>
+  <request group="basic" name="serious_illegal_executedperson" isArray="1" url="http://www.jsgsj.gov.cn:58888/ecipplatform/publicInfoQueryServlet.json?querySxbzxr=true" method="post" description="严重违法信息-失信被执行人信息">
+    <parameter name="org" value="{org}" type="System.String"></parameter>
+    <parameter name="id" value="{id}" type="System.String"></parameter>
+    <parameter name="seqId" value="{seqId}" type="System.String"></parameter>
+    <parameter name="abnormal" value="" type="System.String"></parameter>
+    <parameter name="activeTabId" value="" type="System.String"></parameter>
+    <parameter name="tmp" value="49" type="System.String"></parameter>
+    <parameter name="regNo" value="{regNo}" type="System.String"></parameter>
+    <parameter name="admitMain" value="{admitMain}" type="System.String"></parameter>
+    <parameter name="uniScid" value="{uniScid}" type="System.String"></parameter>
+    <parameter name="econKind" value="{econKind}" type="System.String"></parameter>
+    <parameter name="pageSize" value="1000" type="System.String"></parameter>
+    <parameter name="curPage" value="1" type="System.String"></parameter>
+    <parameter name="sortName" value="" type="System.String"></parameter>
+    <parameter name="sortOrder" value="" type="System.String"></parameter>
+  </request>
+  <request group="basic" name="serious_illegal_executedperson_detail" isArray="1" url="http://www.jsgsj.gov.cn:58888/ecipplatform/publicInfoQueryServlet.json" method="post" description="严重违法信息-失信被执行人信息">
+    <parameter name="querySxbzxrDetail" value="true" type="System.String"></parameter>
+    <parameter name="id" value="{detail_id}" type="System.String"></parameter>
+    <parameter name="tmp" value="{tmp}" type="System.String"></parameter>
+  </request>
+  <request group="basic" name="serious_illegal_tax" isArray="1" url="http://www.jsgsj.gov.cn:58888/ecipplatform/publicInfoQueryServlet.json?queryZdsswfaj=true" method="post" description="严重违法信息-重大税收违法案件信息">
+    <parameter name="org" value="{org}" type="System.String"></parameter>
+    <parameter name="id" value="{id}" type="System.String"></parameter>
+    <parameter name="seqId" value="{seqId}" type="System.String"></parameter>
+    <parameter name="abnormal" value="" type="System.String"></parameter>
+    <parameter name="activeTabId" value="" type="System.String"></parameter>
+    <parameter name="tmp" value="49" type="System.String"></parameter>
+    <parameter name="regNo" value="{regNo}" type="System.String"></parameter>
+    <parameter name="admitMain" value="{admitMain}" type="System.String"></parameter>
+    <parameter name="uniScid" value="{uniScid}" type="System.String"></parameter>
+    <parameter name="econKind" value="{econKind}" type="System.String"></parameter>
+    <parameter name="pageSize" value="1000" type="System.String"></parameter>
+    <parameter name="curPage" value="1" type="System.String"></parameter>
+    <parameter name="sortName" value="" type="System.String"></parameter>
+    <parameter name="sortOrder" value="" type="System.String"></parameter>
+  </request>
+  <request group="basic" name="checkups" isArray="1" url="http://www.jsgsj.gov.cn:58888/ecipplatform/publicInfoQueryServlet.json?queryCcjc=true" method="post" description="抽查检查信息">
+    <parameter name="org" value="{org}" type="System.String"></parameter>
+    <parameter name="id" value="{id}" type="System.String"></parameter>
+    <parameter name="seqId" value="{seqId}" type="System.String"></parameter>
+    <parameter name="abnormal" value="" type="System.String"></parameter>
+    <parameter name="activeTabId" value="" type="System.String"></parameter>
+    <parameter name="tmp" value="78" type="System.String"></parameter>
+    <parameter name="regNo" value="{regNo}" type="System.String"></parameter>
+    <parameter name="admitMain" value="{admitMain}" type="System.String"></parameter>
+    <parameter name="pageSize" value="1000" type="System.String"></parameter>
+    <parameter name="curPage" value="1" type="System.String"></parameter>
+    <parameter name="sortName" value="" type="System.String"></parameter>
+    <parameter name="sortOrder" value="" type="System.String"></parameter>
+  </request>
+  <request group="basic" name="mortgages" isArray="1" url="http://www.jsgsj.gov.cn:58888/ecipplatform/publicInfoQueryServlet.json?queryDcdy=true" method="post" description="动产抵押信息">
+    <parameter name="org" value="{org}" type="System.String"></parameter>
+    <parameter name="id" value="{id}" type="System.String"></parameter>
+    <parameter name="seqId" value="{seqId}" type="System.String"></parameter>
+    <parameter name="abnormal" value="" type="System.String"></parameter>
+    <parameter name="activeTabId" value="" type="System.String"></parameter>
+    <parameter name="tmp" value="78" type="System.String"></parameter>
+    <parameter name="regNo" value="{regNo}" type="System.String"></parameter>
+    <parameter name="admitMain" value="{admitMain}" type="System.String"></parameter>
+    <parameter name="pageSize" value="1000" type="System.String"></parameter>
+    <parameter name="curPage" value="1" type="System.String"></parameter>
+    <parameter name="sortName" value="" type="System.String"></parameter>
+    <parameter name="sortOrder" value="" type="System.String"></parameter>
+  </request>
+  <request group="mortgages" name="mortgages_dyqrgk" isArray="1" url="http://www.jsgsj.gov.cn:58888/ecipplatform/publicInfoQueryServlet.json?queryDcdyDyqrgk=true" method="post" description="动产抵押信息-抵押权人概况">
+    <parameter name="org" value="{org}" type="System.String"></parameter>
+    <parameter name="id" value="{id}" type="System.String"></parameter>
+    <parameter name="seqId" value="{seqId}" type="System.String"></parameter>
+    <parameter name="tmp" value="{tmp}" type="System.String"></parameter>
+    <parameter name="pageSize" value="1000" type="System.String"></parameter>
+    <parameter name="curPage" value="1" type="System.String"></parameter>
+    <parameter name="sortName" value="" type="System.String"></parameter>
+    <parameter name="sortOrder" value="" type="System.String"></parameter>
+  </request>
+  <request group="mortgages" name="mortgages_bdbzqgk" isArray="1" url="http://www.jsgsj.gov.cn:58888/ecipplatform/publicInfoQueryServlet.json?queryDcdyDetail=true" method="post" description="动产抵押信息-被担保债权概况">
+    <parameter name="org" value="{org}" type="System.String"></parameter>
+    <parameter name="id" value="{id}" type="System.String"></parameter>
+    <parameter name="seqId" value="{seqId}" type="System.String"></parameter>
+    <parameter name="tmp" value="{tmp}" type="System.String"></parameter>
+  </request>
+  <request group="mortgages" name="mortgages_dywgk" isArray="1" url="http://www.jsgsj.gov.cn:58888/ecipplatform/publicInfoQueryServlet.json?queryDcdyDywgk=true" method="post" description="动产抵押信息-抵押物概况">
+    <parameter name="org" value="{org}" type="System.String"></parameter>
+    <parameter name="id" value="{id}" type="System.String"></parameter>
+    <parameter name="seqId" value="{seqId}" type="System.String"></parameter>
+    <parameter name="tmp" value="{tmp}" type="System.String"></parameter>
+    <parameter name="pageSize" value="1000" type="System.String"></parameter>
+    <parameter name="curPage" value="1" type="System.String"></parameter>
+    <parameter name="sortName" value="" type="System.String"></parameter>
+    <parameter name="sortOrder" value="" type="System.String"></parameter>
+  </request>
+  <request group="basic" name="equity_qualities" isArray="1" url="http://www.jsgsj.gov.cn:58888/ecipplatform/publicInfoQueryServlet.json?queryGqcz=true" method="post" description="股权出质信息">
+    <parameter name="org" value="{org}" type="System.String"></parameter>
+    <parameter name="id" value="{id}" type="System.String"></parameter>
+    <parameter name="seqId" value="{seqId}" type="System.String"></parameter>
+    <parameter name="abnormal" value="" type="System.String"></parameter>
+    <parameter name="activeTabId" value="" type="System.String"></parameter>
+    <parameter name="tmp" value="78" type="System.String"></parameter>
+    <parameter name="regNo" value="{regNo}" type="System.String"></parameter>
+    <parameter name="admitMain" value="{admitMain}" type="System.String"></parameter>
+    <parameter name="pageSize" value="1000" type="System.String"></parameter>
+    <parameter name="curPage" value="1" type="System.String"></parameter>
+    <parameter name="sortName" value="" type="System.String"></parameter>
+    <parameter name="sortOrder" value="" type="System.String"></parameter>
+  </request>
+  <request group="basic" name="administrative_punishments" isArray="1" url="http://www.jsgsj.gov.cn:58888/ecipplatform/publicInfoQueryServlet.json?queryXzcf=true" method="post" description="行政处罚信息">
+    <parameter name="org" value="{org}" type="System.String"></parameter>
+    <parameter name="id" value="{id}" type="System.String"></parameter>
+    <parameter name="seqId" value="{seqId}" type="System.String"></parameter>
+    <parameter name="abnormal" value="" type="System.String"></parameter>
+    <parameter name="activeTabId" value="" type="System.String"></parameter>
+    <parameter name="tmp" value="78" type="System.String"></parameter>
+    <parameter name="regNo" value="{regNo}" type="System.String"></parameter>
+    <parameter name="admitMain" value="{admitMain}" type="System.String"></parameter>
+    <parameter name="pageSize" value="1000" type="System.String"></parameter>
+    <parameter name="curPage" value="1" type="System.String"></parameter>
+    <parameter name="sortName" value="" type="System.String"></parameter>
+    <parameter name="sortOrder" value="" type="System.String"></parameter>
+  </request>
+  <request group="basic" name="judicial_freezes" isArray="1" url="http://www.jsgsj.gov.cn:58888/ecipplatform/publicInfoQueryServlet.json?querySfxz=true" method="post" description="股权冻结信息">
+    <parameter name="org" value="{org}" type="System.String"></parameter>
+    <parameter name="id" value="{id}" type="System.String"></parameter>
+    <parameter name="seqId" value="{seqId}" type="System.String"></parameter>
+    <parameter name="abnormal" value="" type="System.String"></parameter>
+    <parameter name="activeTabId" value="" type="System.String"></parameter>
+    <parameter name="tmp" value="78" type="System.String"></parameter>
+    <parameter name="regNo" value="{regNo}" type="System.String"></parameter>
+    <parameter name="admitMain" value="{admitMain}" type="System.String"></parameter>
+    <parameter name="pageSize" value="1000" type="System.String"></parameter>
+    <parameter name="curPage" value="1" type="System.String"></parameter>
+    <parameter name="sortName" value="" type="System.String"></parameter>
+    <parameter name="sortOrder" value="" type="System.String"></parameter>
+  </request>
+  <request group="judicial_freezes" name="judicial_freezes_detail" isArray="1" url="http://www.jsgsj.gov.cn:58888/ecipplatform/publicInfoQueryServlet.json" method="get" description="股权冻结详情信息">
+    <parameter name="querySfxzGqdjDetail" value="true" type="System.String"></parameter>
+    <parameter name="org" value="{org}" type="System.String"></parameter>
+    <parameter name="id" value="{id}" type="System.String"></parameter>
+    <parameter name="tmp" value="{tmp}" type="System.String"></parameter>
+  </request>
+  <request group="judicial_freezes" name="judicial_freezes_detail_stockchange" isArray="1" url="http://www.jsgsj.gov.cn:58888/ecipplatform/publicInfoQueryServlet.json" method="get" description="股权冻结详情信息">
+    <parameter name="querySfxzGdbgDetail" value="true" type="System.String"></parameter>
+    <parameter name="org" value="{org}" type="System.String"></parameter>
+    <parameter name="id" value="{id}" type="System.String"></parameter>
+    <parameter name="seqId" value="1" type="System.String"></parameter>
+    <parameter name="tmp" value="{tmp}" type="System.String"></parameter>
+  </request>
+  <request group="basic" name="financial_contributions" isArray="1" url="http://www.jsgsj.gov.cn:58888/ecipplatform/publicInfoQueryServlet.json?queryQyjsxxGdcz=true" method="post" description="股东及出资信息-企业">
+    <parameter name="org" value="{org}" type="System.String"></parameter>
+    <parameter name="id" value="{id}" type="System.String"></parameter>
+    <parameter name="seqId" value="{seqId}" type="System.String"></parameter>
+    <parameter name="abnormal" value="" type="System.String"></parameter>
+    <parameter name="activeTabId" value="" type="System.String"></parameter>
+    <parameter name="tmp" value="78" type="System.String"></parameter>
+    <parameter name="regNo" value="{regNo}" type="System.String"></parameter>
+    <parameter name="admitMain" value="{admitMain}" type="System.String"></parameter>
+    <parameter name="pageSize" value="1000" type="System.String"></parameter>
+    <parameter name="curPage" value="1" type="System.String"></parameter>
+    <parameter name="sortName" value="" type="System.String"></parameter>
+    <parameter name="sortOrder" value="" type="System.String"></parameter>
+  </request>
+  <!--<request group="basic" name="stock_changes" isArray="1" url="http://www.jsgsj.gov.cn:58888/ecipplatform/publicInfoQueryServlet.json?queryQyjsxxGqbg=true" method="post" description="股权变更信息-企业">
+    <parameter name="org" value="{org}" type="System.String"></parameter>
+    <parameter name="id" value="{id}" type="System.String"></parameter>
+    <parameter name="seqId" value="{seqId}" type="System.String"></parameter>
+    <parameter name="abnormal" value="" type="System.String"></parameter>
+    <parameter name="activeTabId" value="" type="System.String"></parameter>
+    <parameter name="tmp" value="78" type="System.String"></parameter>
+    <parameter name="regNo" value="{regNo}" type="System.String"></parameter>
+    <parameter name="admitMain" value="{admitMain}" type="System.String"></parameter>
+    <parameter name="pageSize" value="1000" type="System.String"></parameter>
+    <parameter name="curPage" value="1" type="System.String"></parameter>
+    <parameter name="sortName" value="" type="System.String"></parameter>
+    <parameter name="sortOrder" value="" type="System.String"></parameter>
+  </request>
+  <request group="basic" name="licences_enterprise" isArray="1" url="http://www.jsgsj.gov.cn:58888/ecipplatform/publicInfoQueryServlet.json?queryQyjsxxXzxk=true" method="post" description="行政许可信息-企业">
+    <parameter name="org" value="{org}" type="System.String"></parameter>
+    <parameter name="id" value="{id}" type="System.String"></parameter>
+    <parameter name="seqId" value="{seqId}" type="System.String"></parameter>
+    <parameter name="abnormal" value="" type="System.String"></parameter>
+    <parameter name="activeTabId" value="" type="System.String"></parameter>
+    <parameter name="tmp" value="78" type="System.String"></parameter>
+    <parameter name="regNo" value="{regNo}" type="System.String"></parameter>
+    <parameter name="admitMain" value="{admitMain}" type="System.String"></parameter>
+    <parameter name="pageSize" value="1000" type="System.String"></parameter>
+    <parameter name="curPage" value="1" type="System.String"></parameter>
+    <parameter name="sortName" value="" type="System.String"></parameter>
+    <parameter name="sortOrder" value="" type="System.String"></parameter>
+  </request>
+  <request group="basic" name="administrative_punishments_enterprise" isArray="1" url="http://www.jsgsj.gov.cn:58888/ecipplatform/publicInfoQueryServlet.json?queryQyjsxxXzcf=true" method="post" description="行政处罚信息-企业">
+    <parameter name="org" value="{org}" type="System.String"></parameter>
+    <parameter name="id" value="{id}" type="System.String"></parameter>
+    <parameter name="seqId" value="{seqId}" type="System.String"></parameter>
+    <parameter name="abnormal" value="" type="System.String"></parameter>
+    <parameter name="activeTabId" value="" type="System.String"></parameter>
+    <parameter name="tmp" value="78" type="System.String"></parameter>
+    <parameter name="regNo" value="{regNo}" type="System.String"></parameter>
+    <parameter name="admitMain" value="{admitMain}" type="System.String"></parameter>
+    <parameter name="pageSize" value="1000" type="System.String"></parameter>
+    <parameter name="curPage" value="1" type="System.String"></parameter>
+    <parameter name="sortName" value="" type="System.String"></parameter>
+    <parameter name="sortOrder" value="" type="System.String"></parameter>
+  </request>-->
+  <request group="basic" name="knowledge_properties_enterprise" isArray="1" url="http://www.jsgsj.gov.cn:58888/ecipplatform/publicInfoQueryServlet.json?queryQyjsxxZscq=true" method="post" description="知识产权信息-企业">
+    <parameter name="org" value="{org}" type="System.String"></parameter>
+    <parameter name="id" value="{id}" type="System.String"></parameter>
+    <parameter name="seqId" value="{seqId}" type="System.String"></parameter>
+    <parameter name="abnormal" value="" type="System.String"></parameter>
+    <parameter name="activeTabId" value="" type="System.String"></parameter>
+    <parameter name="tmp" value="78" type="System.String"></parameter>
+    <parameter name="regNo" value="{regNo}" type="System.String"></parameter>
+    <parameter name="admitMain" value="{admitMain}" type="System.String"></parameter>
+    <parameter name="pageSize" value="1000" type="System.String"></parameter>
+    <parameter name="curPage" value="1" type="System.String"></parameter>
+    <parameter name="sortName" value="" type="System.String"></parameter>
+    <parameter name="sortOrder" value="" type="System.String"></parameter>
+  </request>
+  <request group="basic" name="report" isArray="1" url="http://www.jsgsj.gov.cn:58888/ecipplatform/publicInfoQueryServlet.json" method="get" description="企业年报">
+    <parameter name="queryQynbxxYears" value="true" type="System.String"></parameter>
+    <parameter name="org" value="{org}" type="System.String"></parameter>
+    <parameter name="id" value="{id}" type="System.String"></parameter>
+    <parameter name="seqId" value="{seqId}" type="System.String"></parameter>
+    <parameter name="abnormal" value="" type="System.String"></parameter>
+    <parameter name="activeTabId" value="" type="System.String"></parameter>
+    <parameter name="tmp" value="78" type="System.String"></parameter>
+    <parameter name="regNo" value="{regNo}" type="System.String"></parameter>
+    <parameter name="admitMain" value="{admitMain}" type="System.String"></parameter>
+  </request>
+  <request group="report" name="basicInfo_report" isArray="1" url="http://www.jsgsj.gov.cn:58888/ecipplatform/publicInfoQueryServlet.json" method="get" description="基本信息-年报">
+    <parameter name="queryQynbxxJbxx" value="true" type="System.String"></parameter>
+    <parameter name="id" value="{id}" type="System.String"></parameter>
+    <parameter name="tmp" value="78" type="System.String"></parameter>
+  </request>
+  <request group="report" name="websites_report" isArray="1" url="http://www.jsgsj.gov.cn:58888/ecipplatform/publicInfoQueryServlet.json" method="get" description="网站信息-年报">
+    <parameter name="queryQynbxxWzwd" value="true" type="System.String"></parameter>
+    <parameter name="id" value="{id}" type="System.String"></parameter>
+    <parameter name="tmp" value="78" type="System.String"></parameter>
+  </request>
+  <request group="report" name="invests_report" isArray="1" url="http://www.jsgsj.gov.cn:58888/ecipplatform/publicInfoQueryServlet.json" method="get" description="对外投资-年报">
+    <parameter name="queryQynbxxDwtz" value="true" type="System.String"></parameter>
+    <parameter name="id" value="{id}" type="System.String"></parameter>
+    <parameter name="tmp" value="78" type="System.String"></parameter>
+  </request>
+  <request group="report" name="partners_report" isArray="1" url="http://www.jsgsj.gov.cn:58888/ecipplatform/publicInfoQueryServlet.json?queryQynbxxGdcz=true" method="post" description="股东及出资信息-年报">
+    <parameter name="id" value="{id}" type="System.String"></parameter>
+    <parameter name="tmp" value="78" type="System.String"></parameter>
+    <parameter name="pageSize" value="1000" type="System.String"></parameter>
+    <parameter name="curPage" value="1" type="System.String"></parameter>
+    <parameter name="sortName" value="" type="System.String"></parameter>
+    <parameter name="sortOrder" value="" type="System.String"></parameter>
+  </request>
+  <request group="report" name="external_guarantees_report" isArray="1" url="http://www.jsgsj.gov.cn:58888/ecipplatform/publicInfoQueryServlet.json?queryQynbxxDwdb=true" method="post" description="对外担保信息-年报">
+    <parameter name="id" value="{id}" type="System.String"></parameter>
+    <parameter name="tmp" value="78" type="System.String"></parameter>
+    <parameter name="pageSize" value="1000" type="System.String"></parameter>
+    <parameter name="curPage" value="1" type="System.String"></parameter>
+    <parameter name="sortName" value="" type="System.String"></parameter>
+    <parameter name="sortOrder" value="" type="System.String"></parameter>
+  </request>
+  <request group="report" name="shebao_report" isArray="1" url="http://www.jsgsj.gov.cn:58888/ecipplatform/publicInfoQueryServlet.json" method="post" description="社保信息-年报">
+    <parameter name="queryQyshebaoxx" value="true" type="System.String"></parameter>
+    <parameter name="id" value="{id}" type="System.String"></parameter>
+    <parameter name="tmp" value="75" type="System.String"></parameter>
+    
+  </request>
+  <request group="report" name="stock_changes_report" isArray="1" url="http://www.jsgsj.gov.cn:58888/ecipplatform/publicInfoQueryServlet.json?queryQynbxxGqbg=true" method="post" description="股权变更信息-年报">
+    <parameter name="id" value="{id}" type="System.String"></parameter>
+    <parameter name="tmp" value="78" type="System.String"></parameter>
+    <parameter name="pageSize" value="1000" type="System.String"></parameter>
+    <parameter name="curPage" value="1" type="System.String"></parameter>
+    <parameter name="sortName" value="" type="System.String"></parameter>
+    <parameter name="sortOrder" value="" type="System.String"></parameter>
+  </request>
+  <request group="report" name="update_records_report" isArray="1" url="http://www.jsgsj.gov.cn:58888/ecipplatform/publicInfoQueryServlet.json?queryQynbxxXgxx=true" method="post" description="修改信息-年报">
+    <parameter name="id" value="{id}" type="System.String"></parameter>
+    <parameter name="regNo" value="{regNo}" type="System.String"></parameter>
+    <parameter name="reportYear" value="{reportYear}" type="System.String"></parameter>
+    <parameter name="tmp" value="78" type="System.String"></parameter>
+    <parameter name="pageSize" value="1000" type="System.String"></parameter>
+    <parameter name="curPage" value="1" type="System.String"></parameter>
+    <parameter name="sortName" value="" type="System.String"></parameter>
+    <parameter name="sortOrder" value="" type="System.String"></parameter>
+  </request>
+</site>
+

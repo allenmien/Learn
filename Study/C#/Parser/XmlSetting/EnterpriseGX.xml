@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<site url="http://gx.gsxt.gov.cn/search.jspx" name="ecip" description="全国企业信用查询-广西" province="GX">
+  <request group="basic" name="tabs" url="http://gx.gsxt.gov.cn/gjjbj/gjjQueryCreditAction!queryEntIndexInfo.dhtml" method="get" isArray="0" description="工商信息列表-工商公示" >
+    <parameter name="entId" value="{entId}" type="System.String"></parameter>
+    <parameter name="clear" value="true" type="System.String"></parameter>
+    <parameter name="urltag" value="1" type="System.String"></parameter>
+    <parameter name="urlflag" value="0" type="System.String"></parameter>
+    <parameter name="credit_ticket" value="{credit_ticket}" type="System.String"></parameter>
+  </request>
+  <request group="basic" name="basicInfo" url="http://gx.gsxt.gov.cn/gjjbj/gjjQueryCreditAction!openEntInfo.dhtml" method="get" isArray="0" description="基本信息-工商公示" >
+    <parameter name="entId" value="{entId}" type="System.String"></parameter>
+    <parameter name="clear" value="true" type="System.String"></parameter>
+    <parameter name="urltag" value="1" type="System.String"></parameter>
+    <parameter name="credit_ticket" value="{credit_ticket}" type="System.String"></parameter>
+  </request>
+  <request group="partner" name="partnerInfobypage" url="http://gx.gsxt.gov.cn{partnerInfobypage_url}" method="post" isArray="0" description="股东信息-工商公示" >
+    <parameter name="pageNos" value="{pageNos}" type="System.String"></parameter>
+    <parameter name="ent_id" value="{entId}" type="System.String"></parameter>
+    <parameter name="urltag" value="" type="System.String"></parameter>
+    <parameter name="pageSize" value="5" type="System.String"></parameter>
+    <parameter name="pageNo" value="{pageNo}" type="System.String"></parameter>
+  </request>
+  <request group="partner_detail" name="partner_detail" url="http://gx.gsxt.gov.cn/gjjbjTab/gjjTabQueryCreditAction!gdczDetail.dhtml" method="post" isArray="0" description="股东信息详情-工商公示" >
+    <parameter name="ent_id" value="{ent_id}" type="System.String"></parameter>
+    <parameter name="chr_id" value="{chr_id}" type="System.String"></parameter>
+    <parameter name="ajax" value="true" type="System.String"></parameter>
+    <parameter name="time" value="{time}" type="System.String"></parameter>
+    <parameter name="dateflag" value="bf" type="System.String"></parameter>
+  </request>
+  <request group="changerecord" name="changerecordInfobypage" url="http://gx.gsxt.gov.cn/gjjbj/gjjbj/gjjQueryCreditAction!xj_biangengFrame.dhtml?clear=true&amp;credit_ticket={credit_ticket}" method="post" isArray="0" description="变更信息-工商公示" >
+    <parameter name="pageNos" value="{pageNos}" type="System.String"></parameter>
+    <parameter name="ent_id" value="{entId}" type="System.String"></parameter>
+    <parameter name="urltag" value="5" type="System.String"></parameter>
+    <parameter name="pageSize" value="5" type="System.String"></parameter>
+    <parameter name="pageNo" value="{pageNo}" type="System.String"></parameter>
+  </request>
+  <request group="changerecord_detail" name="changerecord_detail" url="http://gx.gsxt.gov.cn{changerecord_detail_url}" method="get" isArray="0" description="变更信息-工商公示" >
+  </request>
+  <request group="mortgage" name="mortgageInfobypage" url="http://gx.gsxt.gov.cn/gjjbjTab/gjjTabQueryCreditAction!dcdyFrame.dhtml" method="post" isArray="0" description="动产抵押信息-工商公示" >
+    <parameter name="pageNos" value="{pageNos}" type="System.String"></parameter>
+    <parameter name="ent_id" value="{entId}" type="System.String"></parameter>
+    <parameter name="urltag" value="12" type="System.String"></parameter>
+    <parameter name="pageSize" value="5" type="System.String"></parameter>
+    <parameter name="pageNo" value="{pageNo}" type="System.String"></parameter>
+  </request>
+  <request group="mortgageInfo_detail" name="mortgageInfo_detail_bdbzq" url="http://gx.gsxt.gov.cn/gjjbjTab/gjjTabQueryCreditAction!dcdyDetail.dhtml" method="post" isArray="0" description="动产抵押详情信息-工商公示" >
+    <parameter name="ent_id" value="{entId}" type="System.String"></parameter>
+    <parameter name="chr_id" value="{chr_id}" type="System.String"></parameter>
+  </request>
+  <request group="mortgageInfo_detail" name="mortgageInfo_detail_dyw" url="http://gx.gsxt.gov.cn/gjjbjTab/gjjTabQueryCreditAction!dywgkFrame.dhtml" method="get" isArray="0" description="动产抵押详情信息-抵押物" >
+    <parameter name="ent_id" value="{entId}" type="System.String"></parameter>
+    <parameter name="chr_id" value="{chr_id}" type="System.String"></parameter>
+    <parameter name="clear" value="true" type="System.String"></parameter>
+    <parameter name="timeStamp" value="{timeStamp}" type="System.String"></parameter>
+  </request>
+  <request group="mortgageInfo_detail_dywbypage" name="mortgageInfo_detail_dywbypage" url="http://gx.gsxt.gov.cn/gjjbjTab/gjjbjTab/gjjTabQueryCreditAction!dywgkFrame.dhtml?clear=true" method="post" isArray="0" description="动产抵押详情信息-抵押物" >
+    <parameter name="ent_id" value="{entId}" type="System.String"></parameter>
+    <parameter name="chr_id" value="{chr_id}" type="System.String"></parameter>
+    <parameter name="pageNos" value="{pageNos}" type="System.String"></parameter>
+    <parameter name="pageNo" value="{pageNo}" type="System.String"></parameter>
+    <parameter name="pageSize" value="5" type="System.String"></parameter>
+  </request>
+  <request group="mortgageInfo_detail" name="mortgageInfo_detail_dyqr" url="http://gx.gsxt.gov.cn/gjjbjTab/gjjTabQueryCreditAction!dyqrgkFrame.dhtml" method="get" isArray="0" description="动产抵押详情信息-抵押权人" >
+    <parameter name="ent_id" value="{entId}" type="System.String"></parameter>
+    <parameter name="chr_id" value="{chr_id}" type="System.String"></parameter>
+    <parameter name="clear" value="true" type="System.String"></parameter>
+    <parameter name="timeStamp" value="{timeStamp}" type="System.String"></parameter>
+  </request>
+  <request group="equity_qualitity" name="equity_qualitityInfobypage" url="http://gx.gsxt.gov.cn{equity_qualitityInfobypage_url}" method="post" isArray="0" description="股权出质信息-工商公示" >
+    <parameter name="pageNos" value="{pageNos}" type="System.String"></parameter>
+    <parameter name="ent_id" value="{entId}" type="System.String"></parameter>
+    <parameter name="urltag" value="13" type="System.String"></parameter>
+    <parameter name="pageSize" value="5" type="System.String"></parameter>
+    <parameter name="pageNo" value="{pageNo}" type="System.String"></parameter>
+  </request>
+  <request group="equity_qualitityInfo_detail" name="equity_qualitityInfo_detail" url="http://gx.gsxt.gov.cn{equity_qualitityInfo_detail_url}" method="post" isArray="0" description="股权出质详情信息-工商公示" >
+    <parameter name="ajax" value="true" type="System.String"></parameter>
+    <parameter name="time" value="{time}" type="System.String"></parameter>
+  </request>
+  <request group="basic" name="licenseInfo2" url="http://gx.gsxt.gov.cn/xzxk/xzxkAction!xj_qyxzxkFrame.dhtml" method="get" isArray="0" description="行政许可信息" >
+    <parameter name="entId" value="{entId}" type="System.String"></parameter>
+    <parameter name="clear" value="true" type="System.String"></parameter>
+    <parameter name="urltag" value="7" type="System.String"></parameter>
+  </request>
+  <request group="administrative_punishment" name="administrative_punishmentInfobypage" url="http://gx.gsxt.gov.cn{administrative_punishment_url}" method="get" isArray="0" description="行政处罚信息-企业公示" >
+    <parameter name="pageSize" value="5" type="System.String"></parameter>
+    <parameter name="pageNo" value="{pageNo}" type="System.String"></parameter>
+  </request>
+  <request group="administrative_punishment" name="administrative_punishmentInfobypage2" url="http://gx.gsxt.gov.cn/gdgq/gdgqAction!xj_qyxzcfFrame.dhtml" method="get" isArray="0" description="行政处罚信息-企业公示" >
+    <parameter name="entId" value="{entId}" type="System.String"></parameter>
+    <parameter name="regno" value="{regno}" type="System.String"></parameter>
+    <parameter name="clear" value="true" type="System.String"></parameter>
+    <parameter name="urltag" value="14" type="System.String"></parameter>
+    <parameter name="pageNos" value="{pageNos}" type="System.String"></parameter>
+    <parameter name="pageSize" value="5" type="System.String"></parameter>
+    <parameter name="pageNo" value="{pageNo}" type="System.String"></parameter>
+  </request>
+  <request group="administrative_punishmentInfo" name="administrative_punishmentInfo_detail2" url="http://gx.gsxt.gov.cn{administrative_punishmentInfo_detail_url2}" method="get" isArray="0" description="行政处罚详情信息-企业公示" >
+  </request>
+  <request group="knowledge_property" name="knowledge_propertyInfobypage" url="http://gx.gsxt.gov.cn{knowledge_propertyInfobypage_url}" method="post" isArray="0" description="股权变更信息-企业公示" >
+    <parameter name="pageSize" value="5" type="System.String"></parameter>
+    <parameter name="pageNo" value="{pageNo}" type="System.String"></parameter>
+  </request>
+  <request group="checkup" name="checkupInfobypage" url="http://gx.gsxt.gov.cn/gsgs/gsxzcfAction!xj_list_ccjcxx.dhtml" method="post" isArray="0" description="抽查检查信息-工商公示" >
+    <parameter name="pageNos" value="{pageNos}" type="System.String"></parameter>
+    <parameter name="ent_id" value="{entId}" type="System.String"></parameter>
+    <parameter name="urltag" value="10" type="System.String"></parameter>
+    <parameter name="pageSize" value="5" type="System.String"></parameter>
+    <parameter name="pageNo" value="{pageNo}" type="System.String"></parameter>
+  </request>
+  <request group="stock_change" name="stock_changeInfobypage" url="http://gx.gsxt.gov.cn{stock_changeInfobypage_url}" method="post" isArray="0" description="股权变更信息-企业公示" >
+    <parameter name="pageSize" value="5" type="System.String"></parameter>
+    <parameter name="pageNo" value="{pageNo}" type="System.String"></parameter>
+  </request>
+  <request group="licence" name="licenceInfobypage" url="http://gx.gsxt.gov.cn{licenceInfobypage_url}" method="post" isArray="0" description="行政许可信息-企业公示" >
+    <parameter name="pageSize" value="5" type="System.String"></parameter>
+    <parameter name="pageNo" value="{pageNo}" type="System.String"></parameter>
+  </request>
+  <request group="reportInfo" name="reportInfo_detail" url="http://gx.gsxt.gov.cn{reportInfo_detail_url}" method="get" isArray="0" description="年报详情信息-企业公示" >
+  </request>
+  <request group="reportInfo_detail" name="reportInfo_detail_partner" url="http://gx.gsxt.gov.cn{reportInfo_detail_partner_url}" method="post" isArray="0" description="股东及出资信息-年报" >
+    <parameter name="entid" value="{report_entid}" type="System.String"></parameter>
+    <parameter name="cid" value="{report_cid}" type="System.String"></parameter>
+    <parameter name="cid" value="" type="System.String"></parameter>
+    <parameter name="pageNos" value="{pageNos}" type="System.String"></parameter>
+    <parameter name="pageSize" value="5" type="System.String"></parameter>
+    <parameter name="pageNo" value="{pageNo}" type="System.String"></parameter>
+  </request>
+  <request group="reportInfo_detail" name="reportInfo_detail_guarantee" url="http://gx.gsxt.gov.cn{reportInfo_detail_guarantee_url}" method="post" isArray="0" description="修改信息-年报" >
+    <parameter name="entid" value="{report_entid}" type="System.String"></parameter>
+    <parameter name="pageNos" value="{pageNos}" type="System.String"></parameter>
+    <parameter name="pageSize" value="5" type="System.String"></parameter>
+    <parameter name="pageNo" value="{pageNo}" type="System.String"></parameter>
+  </request>
+  <request group="reportInfo_detail" name="reportInfo_detail_updaterecord" url="http://gx.gsxt.gov.cn{reportInfo_detail_updaterecord_url}" method="post" isArray="0" description="修改信息-年报" >
+    <parameter name="entid" value="{report_entid}" type="System.String"></parameter>
+    <parameter name="cid" value="{report_cid}" type="System.String"></parameter>
+    <parameter name="year" value="{report_year}" type="System.String"></parameter>
+    <parameter name="pageNos" value="{pageNos}" type="System.String"></parameter>
+    <parameter name="pageSize" value="5" type="System.String"></parameter>
+    <parameter name="pageNo" value="{pageNo}" type="System.String"></parameter>
+  </request>
+  <request group="judicial_freeze" name="judicial_freezeInfobypage" url="http://gx.gsxt.gov.cn/sfxzxx/sfxzxxAction!sfxz_list.dhtml" method="get" isArray="0" description="股权冻结-司法协助" >
+    <parameter name="ent_id" value="{entId}" type="System.String"></parameter>
+    <parameter name="urltag" value="11" type="System.String"></parameter>
+    <parameter name="pageNo" value="{pageNo}" type="System.String"></parameter>
+  </request>
+  <request group="judicial_freeze_detail" name="judicial_freeze_detail" url="http://gx.gsxt.gov.cn{judicial_freeze_detail_url}" method="post" isArray="0" description="股权冻结详情-司法协助" >
+    <parameter name="ajax" value="true" type="System.String"></parameter>
+  </request>
+</site>
+

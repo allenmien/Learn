@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<site url="http://zj.gsxt.gov.cn/client/entsearch/toEntSearch" name="ecip" description="全国企业信用查询-浙江" province="ZH">
+  
+  <request group="jiben" name="jiben" url="http://zj.gsxt.gov.cn/client/entsearch/selectByDocId" method="get" isArray="0" description="工商-基本信息">
+    <parameter name="docId" value="{corpid}" type="System.String"></parameter>
+    <parameter name="classFlag" value="{classFlag}" type="System.String"></parameter>
+    <parameter name="pubType" value="{pubType}" type="System.String"></parameter>
+  </request>
+  <request group="basic" name="partner" url="http://zj.gsxt.gov.cn/midinv/list.json?_t=1481769216485" method="post" isArray="0" description="工商-股东信息">
+    <parameter name="start" value="0" type="System.String"></parameter>
+    <parameter name="length" value="9999" type="System.String"></parameter>
+    <parameter name="params[priPID]" value="{priPID}" type="System.String"></parameter>
+  </request>
+  <request group="basic" name="changerecord" url="http://zj.gsxt.gov.cn/midaltitem/list.json?_t=1481769216495" method="post" isArray="0" description="工商-变更信息">
+    <parameter name="start" value="0" type="System.String"></parameter>
+    <parameter name="length" value="9999" type="System.String"></parameter>
+    <parameter name="params[priPID]" value="{priPID}" type="System.String"></parameter>
+  </request>
+  <request group="basic" name="employee" url="http://zj.gsxt.gov.cn/midmember/list.json?_t=1481769216499" method="post" isArray="0" description="工商-主要人员信息">
+    <parameter name="priPID" value="{priPID}" type="System.String"></parameter>
+  </request>
+  <request group="basic" name="employee_nz" url="http://zj.gsxt.gov.cn/midinv/sfclist.json?_t=1481769216499" method="post" isArray="0" description="工商-农专成员信息">
+    <parameter name="priPID" value="{priPID}" type="System.String"></parameter>
+  </request>
+  <request group="basic" name="branch" url="http://zj.gsxt.gov.cn/midbranch/list.json?_t=1481769216501" method="post" isArray="0" description="工商-分支机构信息">
+    <parameter name="priPID" value="{priPID}" type="System.String"></parameter>
+  </request>
+  <request group="basic" name="judicial_freeze" url="http://zj.gsxt.gov.cn/pub/pubjusticeinfo/list.json?_t=1489739953161" method="post" isArray="0" description="工商-司法协助">
+    <parameter name="start" value="0" type="System.String"></parameter>
+    <parameter name="length" value="5" type="System.String"></parameter>
+    <parameter name="params[priPID]" value="{priPID}" type="System.String"></parameter>
+  </request>
+  <request group="basic" name="report" url="http://zj.gsxt.gov.cn/entinfo/list.json?_t=1481769216485" method="post" isArray="0" description="工商-年报信息">
+    <parameter name="start" value="0" type="System.String"></parameter>
+    <parameter name="length" value="5" type="System.String"></parameter>
+    <parameter name="params[priPID]" value="{priPID}" type="System.String"></parameter>
+  </request>
+  <request group="basic" name="report_gt" url="http://zj.gsxt.gov.cn/entinfo/pblist.json?_t=1481769216485" method="post" isArray="0" description="工商-个体户年报信息">
+    <parameter name="start" value="0" type="System.String"></parameter>
+    <parameter name="length" value="5" type="System.String"></parameter>
+    <parameter name="params[priPID]" value="{priPID}" type="System.String"></parameter>
+  </request>
+  <request group="basic" name="report_nz" url="http://zj.gsxt.gov.cn/entinfo/sfclist.json?_t=1481769216485" method="post" isArray="0" description="工商-农专年报信息">
+    <parameter name="start" value="0" type="System.String"></parameter>
+    <parameter name="length" value="5" type="System.String"></parameter>
+    <parameter name="params[priPID]" value="{priPID}" type="System.String"></parameter>
+  </request>
+  <request group="report" name="report_website" url="http://zj.gsxt.gov.cn/pub/WebsiteInfo/publist.json?_t=1482127149188" method="post" isArray="0" description="年报-网站信息">
+    <parameter name="anCheID" value="{anCheID}" type="System.String"></parameter>
+  </request>
+  <request group="report" name="report_partner" url="http://zj.gsxt.gov.cn/pub/subcapitalInfo/publist.json?_t=1482127149197" method="post" isArray="0" description="年报-股东信息">
+    <parameter name="start" value="0" type="System.String"></parameter>
+    <parameter name="length" value="9999" type="System.String"></parameter>
+    <parameter name="params[anCheID]" value="{anCheID}" type="System.String"></parameter>
+  </request>
+  <request group="report" name="report_invest" url="http://zj.gsxt.gov.cn/pub/forinvestMentInfo/publist.json?_t=1482127149201" method="post" isArray="0" description="年报-对外投资信息">
+    <parameter name="anCheID" value="{anCheID}" type="System.String"></parameter>
+  </request>
+  <request group="report" name="report_guarantee" url="http://zj.gsxt.gov.cn/pub/GuaranteeInfo/publist.json?_t=1482127149204" method="post" isArray="0" description="年报-对外投资信息">
+    <parameter name="start" value="0" type="System.String"></parameter>
+    <parameter name="length" value="9999" type="System.String"></parameter>
+    <parameter name="params[anCheID]" value="{anCheID}" type="System.String"></parameter>
+  </request>
+  <request group="report" name="report_stockchange" url="http://zj.gsxt.gov.cn/pub/alterStockInfo/publist.json?_t=1482127149207" method="post" isArray="0" description="年报-股权变更信息">
+    <parameter name="start" value="0" type="System.String"></parameter>
+    <parameter name="length" value="9999" type="System.String"></parameter>
+    <parameter name="params[anCheID]" value="{anCheID}" type="System.String"></parameter>
+  </request>
+  
+  <request group="report_gt" name="report_basic" url="http://zj.gsxt.gov.cn/entinfo/yrinfo" method="post" isArray="0" description="个体年报-网站信息">
+    <parameter name="year" value="{year}" type="System.String"></parameter>
+    <parameter name="classFlag" value="{classFlag}" type="System.String"></parameter>
+    <parameter name="encryPriPID" value="{corpid}" type="System.String"></parameter>
+  </request>
+  <request group="report_gt" name="report_updaterecord" url="http://zj.gsxt.gov.cn/pub/pbupdateinfo/list.json?_t=1482218856033" method="post" isArray="0" description="个体年报-变更信息">
+    <parameter name="start" value="0" type="System.String"></parameter>
+    <parameter name="length" value="9999" type="System.String"></parameter>
+  </request>
+  <request group="basic" name="checkup" url="http://zj.gsxt.gov.cn/pubscresult/list.json?_t=1481769216485" method="post" isArray="0" description="工商-抽查检查信息">
+    <parameter name="start" value="0" type="System.String"></parameter>
+    <parameter name="length" value="9999" type="System.String"></parameter>
+    <parameter name="params[priPID]" value="{priPID}" type="System.String"></parameter>
+  </request>
+  <request group="basic" name="abnormal" url="http://zj.gsxt.gov.cn/pub/client/pubopanomaly/list/list.json" method="post" isArray="0" description="工商-经营异常信息">
+    <parameter name="start" value="0" type="System.String"></parameter>
+    <parameter name="length" value="9999" type="System.String"></parameter>
+    <parameter name="params[priPID]" value="{priPID}" type="System.String"></parameter>
+  </request>
+  <request group="basic" name="abnormal_gt" url="http://zj.gsxt.gov.cn/pub/client/pubpbopanomaly/list/list.json" method="post" isArray="0" description="工商-经营异常信息">
+    <parameter name="start" value="0" type="System.String"></parameter>
+    <parameter name="length" value="9999" type="System.String"></parameter>
+    <parameter name="params[priPID]" value="{priPID}" type="System.String"></parameter>
+  </request>
+  <request group="basic" name="mortgage" url="http://zj.gsxt.gov.cn/pub/mortreginfo/list.json?_t=1481792573267" method="post" isArray="0" description="工商-动产抵押信息">
+    <parameter name="start" value="0" type="System.String"></parameter>
+    <parameter name="length" value="9999" type="System.String"></parameter>
+    <parameter name="params[regNO]" value="{regNO}" type="System.String"></parameter>
+    <parameter name="params[uniCode]" value="{uniCode}" type="System.String"></parameter>
+  </request>
+  <request group="basic" name="equity_quality" url="http://zj.gsxt.gov.cn/pub/sppledge/list.json?_t=1481792573267" method="post" isArray="0" description="工商-股权出质信息">
+    <parameter name="start" value="0" type="System.String"></parameter>
+    <parameter name="length" value="9999" type="System.String"></parameter>
+    <parameter name="params[priPID]" value="{priPID}" type="System.String"></parameter>
+  </request>
+  <request group="basic" name="judicial_freeze" url="http://zj.gsxt.gov.cn/pub/pubjusticeinfo/list.json?_t=1481792573267" method="post" isArray="0" description="工商-股权冻结信息">
+    <parameter name="start" value="0" type="System.String"></parameter>
+    <parameter name="length" value="9999" type="System.String"></parameter>
+    <parameter name="params[regNO]" value="{regNO}" type="System.String"></parameter>
+    <parameter name="params[uniCode]" value="{uniCode}" type="System.String"></parameter>
+  </request>
+  <request group="basic" name="financial_contribution_js" url="http://zj.gsxt.gov.cn/im/pub/investalter/investmentListJSON" method="get" isArray="0" description="工商-股东及出资信息">
+    <parameter name="_t" value="1481792573267" type="System.String"></parameter>
+    <parameter name="pageNum" value="0" type="System.String"></parameter>
+    <parameter name="length" value="9999" type="System.String"></parameter>
+    <parameter name="priPID" value="{priPID}" type="System.String"></parameter>
+    <parameter name="params[pageNum]" value="0" type="System.String"></parameter>
+  </request>
+  <request group="basic" name="stock_change_js" url="http://zj.gsxt.gov.cn/im/pub/investalter/invsraListJSON" method="get" isArray="0" description="工商-股权变更信息">
+    <parameter name="_t" value="1481792573267" type="System.String"></parameter>
+    <parameter name="pageNum" value="0" type="System.String"></parameter>
+    <parameter name="length" value="9999" type="System.String"></parameter>
+    <parameter name="priPID" value="{priPID}" type="System.String"></parameter>
+    <parameter name="params[pageNum]" value="0" type="System.String"></parameter>
+  </request>
+  <request group="basic" name="licence_js" url="http://zj.gsxt.gov.cn/im/pub/investalter/permitListJSON" method="get" isArray="0" description="工商-行政许可信息">
+    <parameter name="_t" value="1481792573267" type="System.String"></parameter>
+    <parameter name="pageNum" value="0" type="System.String"></parameter>
+    <parameter name="length" value="9999" type="System.String"></parameter>
+    <parameter name="priPID" value="{priPID}" type="System.String"></parameter>
+    <parameter name="params[pageNum]" value="0" type="System.String"></parameter>
+  </request>
+  <request group="basic" name="knowledge_property_js" url="http://zj.gsxt.gov.cn/im/pub/investalter/ippldgListJSON" method="get" isArray="0" description="工商-知识产权出质信息">
+    <parameter name="_t" value="1481792573267" type="System.String"></parameter>
+    <parameter name="pageNum" value="0" type="System.String"></parameter>
+    <parameter name="length" value="9999" type="System.String"></parameter>
+    <parameter name="priPID" value="{priPID}" type="System.String"></parameter>
+    <parameter name="params[pageNum]" value="0" type="System.String"></parameter>
+  </request>
+  <request group="basic" name="administrative_punishment_js" url="http://zj.gsxt.gov.cn/im/pub/investalter/caseListJSON" method="get" isArray="0" description="工商-行政处罚信息">
+    <parameter name="_t" value="1481792573267" type="System.String"></parameter>
+    <parameter name="pageNum" value="0" type="System.String"></parameter>
+    <parameter name="length" value="9999" type="System.String"></parameter>
+    <parameter name="priPID" value="{priPID}" type="System.String"></parameter>
+    <parameter name="params[pageNum]" value="0" type="System.String"></parameter>
+  </request>
+</site>
+

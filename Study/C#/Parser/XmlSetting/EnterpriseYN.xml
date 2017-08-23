@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<site url="http://yn.gsxt.gov.cn/notice/home" name="ecip" description="全国企业信用查询-云南" province="YN">
+  <request group="basic" name="gongshang" url="http://yn.gsxt.gov.cn/notice/notice/view" method="get" isArray="0">
+    <parameter name="uuid" value="{uuid}" type="System.String" />
+    <parameter name="tabPanel" value="01" type="System.String" />
+  </request>
+  <request group="basic" name="employee" url="http://yn.gsxt.gov.cn/notice/notice/moreMember" method="get" isArray="0">
+    <parameter name="uuid" value="{uuid}" type="System.String" />
+  </request>
+  <request group="basic" name="branch" url="http://yn.gsxt.gov.cn/notice/notice/moreBranch" method="get" isArray="0">
+    <parameter name="uuid" value="{uuid}" type="System.String" />
+  </request>
+  <request group="investor" name="investor_detials" url="http://yn.gsxt.gov.cn/notice/notice/view_investor" method="get" isArray="0">
+    <parameter name="uuid" value="{investorId}" type="System.String" />
+  </request>
+  <request group="basic" name="mortgageInfoDetail" url="http://yn.gsxt.gov.cn/notice/notice/view_mortage" method="get" isArray="0">
+    <parameter name="uuid" value="{mortgage_uuid}" type="System.String" />
+  </request>
+   <request group="basic" name="pledgeInfoDetail" url="http://yn.gsxt.gov.cn/notice/notice/view_pledge" method="get" isArray="0">
+    <parameter name="uuid" value="{pledge_uuid}" type="System.String" />
+  </request>
+  <!--- <request group="basic" name="punishmentDetail" url="http://yn.gsxt.gov.cn/notice/notice/view_shr_punish" method="get" isArray="0">
+    <parameter name="shrPunishId" value="{punish_uuid}" type="System.String" />
+  </request>-->
+  <request group="basic" name="xingzhengchufa" url="http://yn.gsxt.gov.cn/notice/notice/view" method="get" isArray="0">
+    <parameter name="uuid" value="{uuid}" type="System.String" />
+    <parameter name="tabPanel" value="03" type="System.String" />
+  </request>
+  <request group="basic" name="jingyingyichang" url="http://yn.gsxt.gov.cn/notice/notice/view" method="get" isArray="0">
+    <parameter name="uuid" value="{uuid}" type="System.String" />
+    <parameter name="tabPanel" value="04" type="System.String" />
+  </request>
+  <request group="basic" name="xingzhengxuke" url="http://yn.gsxt.gov.cn/notice/notice/view" method="get" isArray="0">
+    <parameter name="uuid" value="{uuid}" type="System.String" />
+    <parameter name="tabPanel" value="02" type="System.String" />
+  </request>
+  <request group="basic" name="report" url="http://yn.gsxt.gov.cn/notice/notice/view" method="get" isArray="0" >
+    <parameter name="uuid" value="{uuid}" type="System.String"></parameter>
+    <parameter name="tab" value="02" type="System.String"></parameter>
+  </request>
+  <request group="basic" name="reportDetail" url="http://yn.gsxt.gov.cn/notice/notice/view_annual " method="get" isArray="0" >
+    <parameter name="uuid" value="{reportId}" type="System.String"></parameter>
+  </request>
+  <request group="basic" name="licenseDetail" url="http://yn.gsxt.gov.cn/notice/notice/view_permit" method="get" isArray="0" >
+    <parameter name="uuid" value="{license_uuid}" type="System.String"></parameter>
+  </request>
+  <request group="basic" name="sifa" url="http://yn.gsxt.gov.cn/notice/notice/view" method="get" isArray="0" >
+    <parameter name="uuid" value="{uuid}" type="System.String"></parameter>
+    <parameter name="tab" value="06" type="System.String"></parameter>
+  </request>
+  <request group="sifa" name="sifaDetail" url="http://yn.gsxt.gov.cn/notice/notice/view_stock_freeze" method="get" isArray="0" >
+    <parameter name="freezeId" value="{freezeId}" type="System.String"></parameter>
+  </request>
+   <request group="sifa" name="sifaDetail_stockchange" url="http://yn.gsxt.gov.cn/notice/notice/view_stock_change" method="get" isArray="0" >
+    <parameter name="uuid" value="{freezeId}" type="System.String"></parameter>
+  </request>
+</site>
+

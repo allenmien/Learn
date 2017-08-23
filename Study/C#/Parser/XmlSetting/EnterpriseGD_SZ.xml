@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<site url="http://www.szcredit.com.cn" name="ecip" description="全国企业信用查询-广东_深圳" province="GD_SZ">
+  <request group="gongshang" name="gongshang" url="https://www.szcredit.org.cn/GJQYCredit/GSZJGSPTS/QYGS.aspx" method="get" isArray="0" description="基本信息">
+    <parameter name="rid" value="{entInfo}" type="System.String"></parameter>
+  </request>
+  <request group="basic" name="partner" url="https://www.szcredit.org.cn/GJQYCredit/GSZJGSPTS/QYGS.aspx?rid={entInfo}" method="post" isArray="0" description="股东信息">
+    <parameter name="ScriptManager1" value="{ScriptManager1}" type="System.String"></parameter>
+    <parameter name="TakeEntID" value="" type="System.String"></parameter>
+    <parameter name="txtrid" value="{txtrid}" type="System.String"></parameter>
+    <parameter name="CompanyInfo$txtrid" value="{txtrid}" type="System.String"></parameter>
+    <parameter name="fromMail" value="" type="System.String"></parameter>
+    <parameter name="layerhid" value="0" type="System.String"></parameter>
+    <parameter name="__EVENTTARGET" value="{__EVENTTARGET}" type="System.String"></parameter>
+    <parameter name="__EVENTARGUMENT" value="" type="System.String"></parameter>
+    <parameter name="__VIEWSTATE" value="{__VIEWSTATE}" type="System.String"></parameter>
+    <parameter name="__VIEWSTATEGENERATOR" value="{__VIEWSTATEGENERATOR}" type="System.String"></parameter>
+    <parameter name="__EVENTVALIDATION" value="{__EVENTVALIDATION}" type="System.String"></parameter>
+    <parameter name="__ASYNCPOST" value="true" type="System.String"></parameter>
+  </request>
+  <request group="partner" name="partner_detail" url="https://www.szcredit.org.cn/GJQYCredit/GSZJGSPTS/Detail/wucTZRInfoDetail.aspx" method="get" isArray="0" description="股东详情信息">
+    <parameter name="id" value="{partner_detail_id}" type="System.String"></parameter>
+    <parameter name="recordid" value="{partner_detail_recordid}" type="System.String"></parameter>
+  </request>
+  <request group="basic" name="changerecord" url="https://www.szcredit.org.cn/GJQYCredit/GSZJGSPTS/QYGS.aspx?rid={entInfo}" method="post" isArray="0" description="变更信息">
+    <parameter name="ScriptManager1" value="{ScriptManager1}" type="System.String"></parameter>
+    <parameter name="TakeEntID" value="" type="System.String"></parameter>
+    <parameter name="txtrid" value="{txtrid}" type="System.String"></parameter>
+    <parameter name="CompanyInfo$txtrid" value="{txtrid}" type="System.String"></parameter>
+    <parameter name="fromMail" value="" type="System.String"></parameter>
+    <parameter name="layerhid" value="0" type="System.String"></parameter>
+    <parameter name="__EVENTTARGET" value="{__EVENTTARGET}" type="System.String"></parameter>
+    <parameter name="__EVENTARGUMENT" value="" type="System.String"></parameter>
+    <parameter name="__VIEWSTATE" value="{__VIEWSTATE}" type="System.String"></parameter>
+    <parameter name="__VIEWSTATEGENERATOR" value="{__VIEWSTATEGENERATOR}" type="System.String"></parameter>
+    <parameter name="__EVENTVALIDATION" value="{__EVENTVALIDATION}" type="System.String"></parameter>
+    <parameter name="__ASYNCPOST" value="true" type="System.String"></parameter>
+  </request>
+  <request group="basic" name="financial_contribution" url="https://www.szcredit.org.cn/GJQYCredit/GSZJGSPTS/QYGS.aspx?rid={entInfo}" method="post" isArray="0" description="股东及出资信息">
+    <parameter name="ScriptManager1" value="{ScriptManager1}" type="System.String"></parameter>
+    <parameter name="TakeEntID" value="" type="System.String"></parameter>
+    <parameter name="txtrid" value="{txtrid}" type="System.String"></parameter>
+    <parameter name="CompanyInfo$txtrid" value="{txtrid}" type="System.String"></parameter>
+    <parameter name="fromMail" value="" type="System.String"></parameter>
+    <parameter name="layerhid" value="0" type="System.String"></parameter>
+    <parameter name="__EVENTTARGET" value="{__EVENTTARGET}" type="System.String"></parameter>
+    <parameter name="__EVENTARGUMENT" value="" type="System.String"></parameter>
+    <parameter name="__VIEWSTATE" value="{__VIEWSTATE}" type="System.String"></parameter>
+    <parameter name="__VIEWSTATEGENERATOR" value="{__VIEWSTATEGENERATOR}" type="System.String"></parameter>
+    <parameter name="__EVENTVALIDATION" value="{__EVENTVALIDATION}" type="System.String"></parameter>
+    <parameter name="__ASYNCPOST" value="true" type="System.String"></parameter>
+  </request>
+  <request group="basic" name="mortgage" url="https://www.szcredit.org.cn/GJQYCredit/GSZJGSPTS/QYGS.aspx?rid={entInfo}" method="post" isArray="0" description="动产抵押信息">
+    <parameter name="ScriptManager1" value="{ScriptManager1}" type="System.String"></parameter>
+    <parameter name="TakeEntID" value="" type="System.String"></parameter>
+    <parameter name="txtrid" value="{txtrid}" type="System.String"></parameter>
+    <parameter name="CompanyInfo$txtrid" value="{txtrid}" type="System.String"></parameter>
+    <parameter name="fromMail" value="" type="System.String"></parameter>
+    <parameter name="layerhid" value="0" type="System.String"></parameter>
+    <parameter name="__EVENTTARGET" value="{__EVENTTARGET}" type="System.String"></parameter>
+    <parameter name="__EVENTARGUMENT" value="" type="System.String"></parameter>
+    <parameter name="__VIEWSTATE" value="{__VIEWSTATE}" type="System.String"></parameter>
+    <parameter name="__VIEWSTATEGENERATOR" value="{__VIEWSTATEGENERATOR}" type="System.String"></parameter>
+    <parameter name="__EVENTVALIDATION" value="{__EVENTVALIDATION}" type="System.String"></parameter>
+    <parameter name="__ASYNCPOST" value="true" type="System.String"></parameter>
+  </request>
+  <request group="basic" name="equity_quality" url="https://www.szcredit.org.cn/GJQYCredit/GSZJGSPTS/QYGS.aspx?rid={entInfo}" method="post" isArray="0" description="股权出质信息">
+    <parameter name="ScriptManager1" value="{ScriptManager1}" type="System.String"></parameter>
+    <parameter name="TakeEntID" value="" type="System.String"></parameter>
+    <parameter name="txtrid" value="{txtrid}" type="System.String"></parameter>
+    <parameter name="CompanyInfo$txtrid" value="{txtrid}" type="System.String"></parameter>
+    <parameter name="fromMail" value="" type="System.String"></parameter>
+    <parameter name="layerhid" value="0" type="System.String"></parameter>
+    <parameter name="__EVENTTARGET" value="{__EVENTTARGET}" type="System.String"></parameter>
+    <parameter name="__EVENTARGUMENT" value="" type="System.String"></parameter>
+    <parameter name="__VIEWSTATE" value="{__VIEWSTATE}" type="System.String"></parameter>
+    <parameter name="__VIEWSTATEGENERATOR" value="{__VIEWSTATEGENERATOR}" type="System.String"></parameter>
+    <parameter name="__EVENTVALIDATION" value="{__EVENTVALIDATION}" type="System.String"></parameter>
+    <parameter name="__ASYNCPOST" value="true" type="System.String"></parameter>
+  </request>
+  <request group="basic" name="stock_change" url="https://www.szcredit.org.cn/GJQYCredit/GSZJGSPTS/QYGS.aspx?rid={entInfo}" method="post" isArray="0" description="股权变更信息">
+    <parameter name="ScriptManager1" value="{ScriptManager1}" type="System.String"></parameter>
+    <parameter name="TakeEntID" value="" type="System.String"></parameter>
+    <parameter name="txtrid" value="{txtrid}" type="System.String"></parameter>
+    <parameter name="CompanyInfo$txtrid" value="{txtrid}" type="System.String"></parameter>
+    <parameter name="fromMail" value="" type="System.String"></parameter>
+    <parameter name="layerhid" value="0" type="System.String"></parameter>
+    <parameter name="__EVENTTARGET" value="{__EVENTTARGET}" type="System.String"></parameter>
+    <parameter name="__EVENTARGUMENT" value="" type="System.String"></parameter>
+    <parameter name="__VIEWSTATE" value="{__VIEWSTATE}" type="System.String"></parameter>
+    <parameter name="__VIEWSTATEGENERATOR" value="{__VIEWSTATEGENERATOR}" type="System.String"></parameter>
+    <parameter name="__EVENTVALIDATION" value="{__EVENTVALIDATION}" type="System.String"></parameter>
+    <parameter name="__ASYNCPOST" value="true" type="System.String"></parameter>
+  </request>
+  <request group="basic" name="checkup" url="https://www.szcredit.org.cn/GJQYCredit/GSZJGSPTS/QYGS.aspx?rid={entInfo}" method="post" isArray="0" description="抽查检查信息">
+    <parameter name="ScriptManager1" value="{ScriptManager1}" type="System.String"></parameter>
+    <parameter name="TakeEntID" value="" type="System.String"></parameter>
+    <parameter name="txtrid" value="{txtrid}" type="System.String"></parameter>
+    <parameter name="CompanyInfo$txtrid" value="{txtrid}" type="System.String"></parameter>
+    <parameter name="fromMail" value="" type="System.String"></parameter>
+    <parameter name="layerhid" value="0" type="System.String"></parameter>
+    <parameter name="__EVENTTARGET" value="{__EVENTTARGET}" type="System.String"></parameter>
+    <parameter name="__EVENTARGUMENT" value="" type="System.String"></parameter>
+    <parameter name="__VIEWSTATE" value="{__VIEWSTATE}" type="System.String"></parameter>
+    <parameter name="__VIEWSTATEGENERATOR" value="{__VIEWSTATEGENERATOR}" type="System.String"></parameter>
+    <parameter name="__EVENTVALIDATION" value="{__EVENTVALIDATION}" type="System.String"></parameter>
+    <parameter name="__ASYNCPOST" value="true" type="System.String"></parameter>
+  </request>
+  <request group="report" name="report" url="https://www.szcredit.org.cn/GJQYCredit/GSZJGSPTS/{report_detail_url}" method="get" isArray="0" description="企业年报信息">
+  </request>
+</site>
+

@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>企业信用详细</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style_lyj.css">
+    <script type="text/javascript" src="/js/jquery-1.9.1.js"></script>
+    <script src="/js/style.js"></script>
+    <script type="text/javascript" src="/js/jquery.imgbox.pack.js"></script>
+    <script type="text/javascript" src="/js/ajax/http.js"></script>
+    <script type="text/javascript">
+        var rootPath = '';
+        var entId = '';
+        var entName = '';
+        var entNo = '';
+        function jumppage(pageNo) {
+            $("#pageNos").val(pageNo);
+            $("#iframeFrame").submit();
+        }
+    </script>
+</head>
+
+<body>
+    <div class="qyqx-detail">
+        <h1 class="public-title2 qy-title">变更信息</h1>
+        <form action="gjjbj/gjjQueryCreditAction!xj_biangengFrame.dhtml?clear=true&amp;credit_ticket=92F76DB4D61FB4F94D006839D10E6035"
+            method="post" name="iframeFrame" id="iframeFrame">
+            <input type="hidden" id="pageNos" name="pageNos" value="1">
+            <input type="hidden" id="ent_id" name="ent_id" value="6528270000015033">
+            <input type="hidden" id="urltag" name="urltag" value="5">
+            <table cellspacing="0" cellpadding="0" class="table-result" id="touziren">
+                <tbody id="table2">
+                    <tr width="95%">
+                        <th width="4%" style="text-align:center;"> 序号</th>
+                        <th width="15%" style="text-align:center;"> 变更事项</th>
+                        <th width="25%" style="text-align:center;"> 变更前内容</th>
+                        <th width="25%" style="text-align:center;"> 变更后内容</th>
+                        <th width="10%" style="text-align:center;"> 变更日期</th>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">1</td>
+                        <td style="text-align:center;">投资人(股权)变更</td>
+                        <td style="text-align:center;">企业名称: 董元祥; 出资额: 100; 百分比: 10; 法人性质: 自然人股东 企业名称: 范后举; 出资额: 100; 百分比: 10; 法人性质: 自然人股东 企业名称: 齐金星; 出资额:
+                            100; 百分比: 10; 法人性质: 自然人股东 企业名称: 肖生发; 出资额: 100; 百分比: 10; 法人性质: 自然人股东 企业名称: 刁大振; 出资额: 250; 百分比:
+                            25; 法人性质: 自然人股东 企业名称: 毛美银; 出资额: 350; 百分比: 35; 法人性质: 自然人股东 </td>
+                        <td style="text-align:center;">企业名称: 包志强; 出资额: 50; 百分比: 5; 法人性质: 自然人股东 企业名称: 董元祥; 出资额: 100; 百分比: 10; 法人性质: 自然人股东 企业名称: 齐金星; 出资额:
+                            100; 百分比: 10; 法人性质: 自然人股东 企业名称: 肖生发; 出资额: 100; 百分比: 10; 法人性质: 自然人股东 企业名称: 杨焕松; 出资额: 100; 百分比:
+                            10; 法人性质: 自然人股东 企业名称: 范后举; 出资额: 150; 百分比: 15; 法人性质: 自然人股东 企业名称: 刁大振; 出资额: 200; 百分比: 20; 法人性质:
+                            自然人股东 企业名称: 毛美银; 出资额: 200; 百分比: 20; 法人性质: 自然人股东 </td>
+                        <td style="text-align:center;">2015年10月13日</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">2</td>
+                        <td style="text-align:center;">投资人(股权)变更</td>
+                        <td style="text-align:center;">企业名称: 董元祥; 出资额: 100; 百分比: 10; 法人性质: 自然人股东 企业名称: 范后举; 出资额: 100; 百分比: 10; 法人性质: 自然人股东 企业名称: 肖生发; 出资额:
+                            100; 百分比: 10; 法人性质: 自然人股东 企业名称: 刁大振; 出资额: 350; 百分比: 35; 法人性质: 自然人股东 企业名称: 毛美银; 出资额: 350; 百分比:
+                            35; 法人性质: 自然人股东 </td>
+                        <td style="text-align:center;">企业名称: 董元祥; 出资额: 100; 百分比: 10; 法人性质: 自然人股东 企业名称: 范后举; 出资额: 100; 百分比: 10; 法人性质: 自然人股东 企业名称: 齐金星; 出资额:
+                            100; 百分比: 10; 法人性质: 自然人股东 企业名称: 肖生发; 出资额: 100; 百分比: 10; 法人性质: 自然人股东 企业名称: 刁大振; 出资额: 250; 百分比:
+                            25; 法人性质: 自然人股东 企业名称: 毛美银; 出资额: 350; 百分比: 35; 法人性质: 自然人股东 </td>
+                        <td style="text-align:center;">2015年04月15日</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">3</td>
+                        <td style="text-align:center;">法定代表人(负责人、董事长、首席代表)变更</td>
+                        <td style="text-align:center;">刁大力</td>
+                        <td style="text-align:center;">刁大振</td>
+                        <td style="text-align:center;">2014年12月22日</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">4</td>
+                        <td style="text-align:center;">投资人(股权)变更</td>
+                        <td style="text-align:center;">企业名称: 董元祥; 出资额: 100; 百分比: 10; 法人性质: 自然人股东 企业名称: 范后举; 出资额: 100; 百分比: 10; 法人性质: 自然人股东 企业名称: 肖生发; 出资额:
+                            100; 百分比: 10; 法人性质: 自然人股东 企业名称: 刁大力; 出资额: 350; 百分比: 35; 法人性质: 自然人股东 企业名称: 毛美银; 出资额: 350; 百分比:
+                            35; 法人性质: 自然人股东 </td>
+                        <td style="text-align:center;">企业名称: 董元祥; 出资额: 100; 百分比: 10; 法人性质: 自然人股东 企业名称: 范后举; 出资额: 100; 百分比: 10; 法人性质: 自然人股东 企业名称: 肖生发; 出资额:
+                            100; 百分比: 10; 法人性质: 自然人股东 企业名称: 刁大振; 出资额: 350; 百分比: 35; 法人性质: 自然人股东 企业名称: 毛美银; 出资额: 350; 百分比:
+                            35; 法人性质: 自然人股东 </td>
+                        <td style="text-align:center;">2014年12月22日</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">5</td>
+                        <td style="text-align:center;">投资人(股权)变更</td>
+                        <td style="text-align:center;">企业名称: 范后举; 出资额: 100; 百分比: 10; 法人性质: 自然人股东 企业名称: 肖生发; 出资额: 100; 百分比: 10; 法人性质: 自然人股东 企业名称: 刁大力; 出资额:
+                            200; 百分比: 20; 法人性质: 自然人股东 企业名称: 毛美银; 出资额: 600; 百分比: 60; 法人性质: 自然人股东 </td>
+                        <td style="text-align:center;">企业名称: 董元祥; 出资额: 100; 百分比: 10; 法人性质: 自然人股东 企业名称: 范后举; 出资额: 100; 百分比: 10; 法人性质: 自然人股东 企业名称: 肖生发; 出资额:
+                            100; 百分比: 10; 法人性质: 自然人股东 企业名称: 刁大力; 出资额: 350; 百分比: 35; 法人性质: 自然人股东 企业名称: 毛美银; 出资额: 350; 百分比:
+                            35; 法人性质: 自然人股东 </td>
+                        <td style="text-align:center;">2014年10月24日</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="pages">
+                共查询到&nbsp;10&nbsp;条信息&nbsp;&nbsp;共2页&nbsp;&nbsp;
+                <a href="javascript:void(0)" class="btn" onclick="jumppage('1');return false">首页</a>&nbsp;&nbsp;
+                <a href="javascript:void(0)" class="btn forward" onclick="jumppage('1');return false">上一页</a>&nbsp;&nbsp;
+                <font class="num active">1</font>&nbsp;&nbsp;
+                <a href="javascript:void(0)" class="num" onclick="jumppage('2');return false">2</a>&nbsp;&nbsp;
+                <a href="javascript:void(0)" class="btn next" onclick="jumppage('2');return false">下一页</a>&nbsp;&nbsp;
+                <a href="javascript:void(0)" class="btn" onclick="jumppage('2');return false">末页</a>&nbsp;&nbsp;
+                <input type="hidden" value="2" id="pagescount">
+                <input type="hidden" value="10" id="count">
+                <input type="hidden" value="5" id="pageSize" name="pageSize">
+                <input type="hidden" id="pageNo" name="pageNo" value="1">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

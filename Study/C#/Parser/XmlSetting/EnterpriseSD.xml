@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<site url="http://218.57.139.24/" name="ecip" description="全国企业信用查询-山东" province="SD">
+  
+  <!--<request group="basic" name="basic" url="http://218.57.139.24/pub/gsgsdetail/{subUrl}/{encrpripid}" method="get" isArray="0" >
+  </request>-->
+  <request group="gt" name="gtbasic" url="http://sd.gsxt.gov.cn/pub/jbxx/gt/{pripid}" method="post" isArray="0" >
+  </request>
+  <request group="gt" name="report" url="http://sd.gsxt.gov.cn/pub/annual/gt/{pripid}" method="post" isArray="0" >
+  </request>
+  <request group="basic" name="gtreport_detail" url="http://sd.gsxt.gov.cn/pub/annual/gt/detail/{ancheid}" method="post" isArray="0" >
+  </request>
+  <request group="qy" name="basic" url="http://sd.gsxt.gov.cn/pub/jbxx/qy/{pripid}" method="post" isArray="0" >
+  </request>
+  <!--企业出资信息-->
+  <request group="basic" name="gscz" url="http://sd.gsxt.gov.cn/pub/czxx/{recid}" method="post" isArray="0" >
+  </request>
+  <!--企业年报基本信息-->
+  <request group="qy" name="report" url="http://sd.gsxt.gov.cn/pub/annual/qy/{pripid}" method="post" isArray="0" >
+  </request>
+  <!--企业年报详细信息-->
+  <request group="basic" name="report_detail" url="http://sd.gsxt.gov.cn/pub/annual/qy/detail/{ancheid}" method="post" isArray="0" >
+  </request>
+  <!--企业出资信息、股权变更、行政处罚、行政许可、知识产权-->
+  <request group="qy" name="jsxx" url="http://sd.gsxt.gov.cn/pub/jsxx/{pripid}" method="post" isArray="0" >
+  </request>
+  <!--工商行政处罚-->
+  <request group="gov" name="xzcf" url="http://sd.gsxt.gov.cn/pub/gov/xzcf/{pripid}" method="post" isArray="0" >
+  </request>
+  <!--工商行政许可-->
+  <request group="gov" name="xzxk" url="http://sd.gsxt.gov.cn/pub/gov/xzxk/{pripid}" method="post" isArray="0" >
+  </request>
+  <!--工商司法协助-->
+  <request group="gov" name="sfxz" url="http://sd.gsxt.gov.cn/pub/gov/sfxz/{pripid}" method="post" isArray="0" >
+  </request>
+  <!--工商动产抵押详情-->
+  <request group="mortgage_detail" name="mortgage_detail" url="http://sd.gsxt.gov.cn/pub/dcdy/{mortgage_detail_id}" method="post" isArray="0" >
+  </request>
+  <!--<request group="basic" name="zhuyaorenyuan" url="http://218.57.139.24/pub/gsryxx/{subUrl}" method="post" isArray="0" >
+    <parameter name="encrpripid" value="{encrpripid}" type="System.String"></parameter>
+  </request>
+  
+  <request group="basic" name="gongshangchuzi" url="http://218.57.139.24/pub/gsczxx" method="post" isArray="0" >
+    <parameter name="encrpripid" value="{encrpripid}" type="System.String"></parameter>
+  </request>
+  
+  <request group="basic" name="branch" url="http://218.57.139.24/pub/gsfzjg/{subUrl}" method="post" isArray="0" >
+    <parameter name="encrpripid" value="{encrpripid}" type="System.String"></parameter>
+  </request>
+
+  <request group="investor" name="investordetail" url="http://218.57.139.24/{linkUrl}" method="get" isArray="0" >
+  </request>
+
+  <request group="basic" name="jingyin" url="http://218.57.139.24/pub/jyyc/{subUrl}" method="post" isArray="0" >
+    <parameter name="encrpripid" value="{encrpripid}" type="System.String"></parameter>
+  </request>
+
+  <request group="basic" name="choucha" url="http://218.57.139.24/pub/ccjcxx" method="post" isArray="0" >
+    <parameter name="encrpripid" value="{encrpripid}" type="System.String"></parameter>
+  </request>
+
+  --><!--股东及出资信息--><!--
+  <request group="basic" name="gudongchuzi" url="http://218.57.139.24/pub/qygsjsxxxzczxx" method="post" isArray="0" >
+    <parameter name="encrpripid" value="{encrpripid}" type="System.String"></parameter>
+  </request>
+
+  --><!--变更信息--><!--
+  <request group="basic" name="biangeng" url="http://218.57.139.24/pub/qygsjsxxczxxbgsx" method="post" isArray="0" >
+    <parameter name="encrpripid" value="{encrpripid}" type="System.String"></parameter>
+  </request>
+
+  --><!--行政许可信息--><!--
+  <request group="basic" name="license" url="http://218.57.139.24/pub/qygsjsxxxzxk" method="post" isArray="0" >
+    <parameter name="encrpripid" value="{encrpripid}" type="System.String"></parameter>
+  </request>
+
+  --><!--动产抵押--><!--
+  <request group="basic" name="dongchandiya" url="http://218.57.139.24/pub/gsdcdy" method="post" isArray="0" >
+    <parameter name="encrpripid" value="{encrpripid}" type="System.String"></parameter>
+  </request>
+
+  --><!--股权出质--><!--
+  <request group="basic" name="guquanchuzhi" url="http://218.57.139.24/pub/gsgqcz" method="post" isArray="0" >
+    <parameter name="encrpripid" value="{encrpripid}" type="System.String"></parameter>
+  </request>
+
+  --><!--股权变更--><!--
+  <request group="basic" name="guquanbiangeng" url="http://218.57.139.24/pub/qygsJsxxgqbg" method="post" isArray="0" >
+    <parameter name="encrpripid" value="{encrpripid}" type="System.String"></parameter>
+  </request>
+
+  <request group="basic" name="reportItems" url="http://218.57.139.24/pub/qygsdetail/{subUrl}/{encrpripid}" method="get" isArray="0" >
+  </request>
+
+  <request group="report" name="reportDetail" url="http://218.57.139.24{reportlink}" method="get" isArray="0" >
+  </request>
+
+  <request group="basic" name="freeze" url="http://218.57.139.24/pub/sfgsdetail/{subUrl}/{encrpripid}" method="get" isArray="0" >
+  </request>
+
+
+  <request group="basic" name="freezeDetail" url=" http://218.57.139.24/pub/sfgsgqxxdetail/{encrpripid}/{subUrl}/{pidSD}/{frozstate}" method="get" isArray="0" >
+  </request>-->
+
+
+
+
+  <!--<request group="basic" name="beian" url="http://tjcredit.gov.cn/platform/saic/baseInfo.json" method="get" isArray="0" >
+    <parameter name="entId" value="{entId}" type="System.String"></parameter>
+    <parameter name="departmentId" value="scjgw" type="System.String"></parameter>
+    <parameter name="infoClassId" value="ba" type="System.String"></parameter>
+  </request>
+
+  <request group="basic" name="jinyinyichang" url="http://tjcredit.gov.cn/platform/saic/baseInfo.json" method="get" isArray="0" >
+    <parameter name="entId" value="{entId}" type="System.String"></parameter>
+    <parameter name="departmentId" value="scjgw" type="System.String"></parameter>
+    <parameter name="infoClassId" value="qyjyycmlxx" type="System.String"></parameter>
+  </request>
+
+  <request group="basic" name="chouchajiancha" url="http://tjcredit.gov.cn/platform/saic/baseInfo.json" method="get" isArray="0" >
+    <parameter name="entId" value="{entId}" type="System.String"></parameter>
+    <parameter name="departmentId" value="scjgw" type="System.String"></parameter>
+    <parameter name="infoClassId" value="ccjcxx" type="System.String"></parameter>
+  </request>
+
+  <request group="basic" name="reportItems" url="http://tjcredit.gov.cn/report/nblist" method="get" isArray="0" >
+    <parameter name="entid" value="{entId}" type="System.String"></parameter>
+  </request>
+
+  <request group="report" name="reportDetail" url="http://tjcredit.gov.cn/report/annals" method="get" isArray="0" >
+    <parameter name="entid" value="{entId}" type="System.String"></parameter>
+    <parameter name="year" value="{year}" type="System.String"></parameter>
+  </request>
+
+  <request group="investor" name="investor_detials" url="http://tjcredit.gov.cn/platform/shareholder.do" method="get" isArray="0" >
+    <parameter name="ID" value="{investorId}" type="System.String"></parameter>
+    <parameter name="ENTID" value="{entId}" type="System.String"></parameter>
+
+    --><!--<parameter name="issaic" value="{entId}" type="System.String"></parameter>
+    <parameter name="hasInfo" value="{year}" type="System.String"></parameter>--><!--
+  </request>-->
+</site>
+

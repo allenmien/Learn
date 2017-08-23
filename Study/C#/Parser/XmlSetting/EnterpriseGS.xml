@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<site url="http://gs.gsxt.gov.cn/gsxygs/index.jsp" name="ecip" description="全国企业信用查询-甘肃" province="GS">
+  
+  <!--工商信息-->
+  <request group="basic" name="gongshang" url="http://gs.gsxt.gov.cn/gsxygs/pubSearch/basicView" method="post" isArray="0" >
+    <parameter name="pripid" value="{pripid}" type="System.String"></parameter>
+    <parameter name="entcate" value="{entcate}" type="System.String"></parameter>
+    <parameter name="queryType" value="query" type="System.String"></parameter>
+    <parameter name="entname" value="{name}" type="System.String"></parameter>
+    <parameter name="geetest_challenge" value="query" type="System.String"></parameter>
+    <parameter name="geetest_validate" value="query" type="System.String"></parameter>
+    <parameter name="geetest_seccode" value="query" type="System.String"></parameter>
+  </request>
+  <!--解析股东详情-->
+  <request group="partner" name="partner_detail" url="http://gs.gsxt.gov.cn/gsxygs/pubSearch/gqczrDetail" method="get" isArray="0" >
+    <parameter name="invid" value="{invid}" type="System.String"></parameter>
+  </request>
+  <!--解析行政处罚详情-->
+  <request group="partner" name="ap_detail" url="http://gs.gsxt.gov.cn/gsxygs/pubSearch/xzcfDetail" method="get" isArray="0" >
+    <parameter name="caseid" value="{caseid}" type="System.String"></parameter>
+  </request>
+  <!--解析动产抵押详情-->
+  <request group="mortgage" name="mortgage_detail" url="http://gs.gsxt.gov.cn/gsxygs/pubSearch/dcdyDetail" method="get" isArray="0" >
+    <parameter name="morreg_id" value="{morreg_id}" type="System.String"></parameter>
+  </request>
+  <!--解析股权出质详情-->
+  <request group="equityquality" name="equityquality_detail" url="http://gs.gsxt.gov.cn/gsxygs/pubSearch/gqczChange" method="get" isArray="0" >
+    <parameter name="imporgid" value="{imporgid}" type="System.String"></parameter>
+  </request>
+  <request group="report" name="report" url="http://gs.gsxt.gov.cn/gsxygs/anche/ancheInfo" method="post" isArray="0" >
+    <parameter name="ancheId" value="{report_ancheId}" type="System.String"></parameter>
+    <parameter name="entcate" value="{report_entcate}" type="System.String"></parameter>
+    <parameter name="ancheyear" value="{ancheyear}" type="System.String"></parameter>
+  </request>
+  <!--年报信息-->
+  <!--<request group="basic" name="report" url="http://gs.gsxt.gov.cn/gsxygs/anche/ancheInfo" method="get" isArray="0" >
+    <parameter name="pripid" value="{pripid}" type="System.String"></parameter>
+    <parameter name="entcate" value="{entcate}" type="System.String"></parameter>
+  </request>
+  <request group="report" name="report_post" url="http://gs.gsxt.gov.cn/gsxygs/anche/ancheInfo" method="post" isArray="0" >
+    <parameter name="pripid" value="{pripid}" type="System.String"></parameter>
+    <parameter name="entcate" value="{entcate}" type="System.String"></parameter>
+    <parameter name="ancheyear" value="{ancheyear}" type="System.String"></parameter>
+  </request>
+  <request group="report" name="reportdetail" url="http://gs.gsxt.gov.cn/gsxygs/anche/ancheInfo/{parameterurl}" method="post" isArray="0" >
+    <parameter name="ancheyear" value="{ancheyear}" type="System.String"></parameter>
+  </request>-->
+</site>
+
