@@ -6,3 +6,4 @@ try:
     a = ""
 except Exception as e:
     print e
+    a = ""
